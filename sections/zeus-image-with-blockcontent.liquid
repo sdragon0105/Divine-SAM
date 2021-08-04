@@ -1,0 +1,60 @@
+<div id="{{section.id}}" class="shopify-section">
+<div class="container">
+  <div class="product-zeus-bg">
+<div class="main-zeus-image-with-block">
+  <div class="zeus-right-img"  data-aos="zoom-in" data-aos-duration="1000">
+<img src="{{section.settings.image |img_url:''}}">
+  </div>
+  <div class="zeus-left-content">
+ <h2>{{section.settings.title}}</h2> 
+    {% for block in section.blocks %}
+  <div class="zeus-block-content"  data-aos="fade-up" data-aos-duration="1000">
+<span>{{block.settings.title-1}}</span>
+  <p>{{block.settings.content}}</p>
+  </div>{%endfor%}     
+  </div> 
+</div>
+  </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"right Image"
+},
+{
+"type":"text",
+"id":"title",
+"label":"left Heading"
+}
+],
+"blocks": [
+{
+"type": "content-section",
+"name": "steps",
+"settings": [
+{
+"id": "title-1",
+"type": "text",
+"label": "heading"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+}
+]
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

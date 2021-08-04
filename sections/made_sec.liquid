@@ -1,0 +1,40 @@
+<div class="made_sec mar_top_2">
+  <div class="container">
+    <div class="made-framed padding-top-50">
+      <h2 class="section_tlt">{{ section.settings.title }}</h2>
+      <p class="body_font max_400">{{ section.settings.text }}</p>
+      <img class="made_screen" src="{{ section.settings.image | img_url: 'master' }}">
+    </div>
+  </div>
+</div>
+<style>
+  .made-framed {background-color: #eef1f0;}
+</style>
+{% schema %}
+  {
+    "name": "Made Section",
+    "settings": [
+                    {
+                      "type": "text",
+                      "id": "title",
+                      "label": "Title"
+                    },
+                    {
+                      "type": "text",
+                      "id": "text",
+                      "label": "Text"
+                    },
+					{
+                      "type": "image_picker",
+                      "id": "image",
+                      "label": "Image"
+                    }
+				]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

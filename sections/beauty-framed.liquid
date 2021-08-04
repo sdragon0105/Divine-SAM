@@ -1,0 +1,114 @@
+<div class="beauty-framed-sec">
+  <div class="container">
+    <div class="beauty-framed padding-top-50 padding-bottom-501">
+        {% if section.settings.title != blank %}
+<!--           <h2 class="section_tlt">{{ section.settings.title }}</h2> -->
+          <h2 class="section_tlt">{{ product.metafields.product-block.block-heading }}</h2>   
+        {% endif %}
+        {% if section.settings.text != blank %}
+<!--           <p>{{ section.settings.text }}</p> -->
+          <p>{{ product.metafields.product-block.block-text }}</p>
+        {% endif %}
+      	{% if section.settings.image != blank %}
+      	<div class="beauty_img_div mobile_hide">
+          <img class="beauty_img" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image }}">
+      	</div>
+        {% endif %}
+    </div>
+    <div class="how_work desktop_hide padding-bottom-50">
+              {% if section.settings.worktitle != blank %}
+              <h6>{{ section.settings.worktitle }}</h6>
+              {% endif %}
+              <div class="how_work_row">
+                {% if section.settings.workicon1 != blank %}
+                <div class="how_work_col">
+                  <img src="{{ section.settings.workicon1 | img_url: "master" }}" class="icon_work">
+                  <p>{{ section.settings.worktext1 }}</p>
+                </div>
+                {% endif %}
+                {% if section.settings.workicon2 != blank %}
+                <div class="how_work_col">
+                  <img src="{{ section.settings.workicon2 | img_url: "master" }}" class="icon_work">
+                  <p>{{ section.settings.worktext2 }}</p>
+                </div>
+                {% endif %}
+                {% if section.settings.workicon3 != blank %}
+                <div class="how_work_col">
+                  <img src="{{ section.settings.workicon3 | img_url: "master" }}" class="icon_work">
+                  <p>{{ section.settings.worktext3 }}</p>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+  </div>
+</div>
+<style>
+  .beauty-framed {background: #eef1f0;}
+</style>
+{% schema %}
+  {
+    "name": "Beauty Framed",
+    "settings": [
+                    {
+                      "type": "text",
+                      "id": "title",
+                      "label": "Title"
+                    },
+                    {
+                      "type": "text",
+                      "id": "text",
+                      "label": "Text"
+                    },
+					{
+                      "type": "image_picker",
+                      "id": "image",
+                      "label": "Image"
+                    },
+					{
+                       "type": "header",
+                       "content": "For Mobile Section"
+                    },
+					{
+                        "type": "text",
+                        "id": "worktitle",
+                        "label": "Work Title"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "workicon1",
+                        "label": "Work Icon 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "worktext1",
+                        "label": "Work Text 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "workicon2",
+                        "label": "Work Icon 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "worktext2",
+                        "label": "Work Text 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "workicon3",
+                        "label": "Work Icon 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "worktext3",
+                        "label": "Work Text 3"
+                    }
+				]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

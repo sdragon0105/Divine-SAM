@@ -1,0 +1,2985 @@
+{
+  "current": {
+    "typography_type": "shopify_font",
+    "type_header_font": "roboto_n4",
+    "type_header_base_size": 15,
+    "logo_size": 27,
+    "type_base_font": "roboto_condensed_n4",
+    "type_base_size": 20,
+    "type_heading_font": "roboto_n4",
+    "type_heading_size": 26,
+    "favicon": "shopify:\/\/shop_images\/3.png",
+    "logo_text": "Divine",
+    "logo": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1.png",
+    "logo_max_width": 130,
+    "enable_cart_digital_product": false,
+    "digital_art_product": "digital-artwork-download",
+    "enable_opengraph": false,
+    "image_share": "",
+    "body_layout": "page-full-width",
+    "header_layout": "header_1",
+    "enable_header_effect": true,
+    "footer_layout": "footer_1",
+    "enable_footer_effect": false,
+    "product_layout": "layout-1",
+    "breadcrumb_layout": "bottom",
+    "product_card_height_procent": 100,
+    "terms_conditions": false,
+    "option_swatch": true,
+    "option_color_swatch": "Color",
+    "show_product_switch_image": true,
+    "show_product_wishlist": false,
+    "show_product_quickview": false,
+    "show_product_button": true,
+    "show_product_vendor": false,
+    "show_product_title": true,
+    "show_product_reviews": false,
+    "show_product_price": true,
+    "show_product_variant": true,
+    "show_product_variant_img": true,
+    "time_show_badgeNew": 1,
+    "product_show_badgeNew": 5,
+    "type_label_sale": "text",
+    "enable_zoom_qv": true,
+    "enable_product_reviews_qv": false,
+    "enable_vendor_qv": false,
+    "enable_product_sku_qv": false,
+    "enable_product_availability_qv": false,
+    "enable_countdown_qv": false,
+    "enable_short_description_qv": true,
+    "number_words_qv": 25,
+    "enable_quantity_selector_qv": false,
+    "enable_product_wishlist_qv": false,
+    "enable_product_socialShare_qv": false,
+    "enable_customers_view_qv": false,
+    "number_view_qv": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+    "title_view_qv": "customers are viewing this product",
+    "enable_sold_in_qv": false,
+    "item_prd_qv": "3,5,6,7,8,10,12,15",
+    "item_prds_qv": "sold in last",
+    "hours_prs_qv": "10,15,16,17,18,20,25,35",
+    "item_hours_qv": "hours",
+    "enable_language": true,
+    "lange_1": "en",
+    "lange_1_icon": "",
+    "lange_2": "de",
+    "lange_2_icon": "",
+    "lange_3": "",
+    "lange_3_icon": "",
+    "lange_4": "",
+    "lange_4_icon": "",
+    "lange_5": "",
+    "lange_5_icon": "",
+    "enable_shopify_payments_currencies": false,
+    "enable_multiple_currencies": true,
+    "enable_auto_currency": false,
+    "currency_1_unit": "USD",
+    "currency_1_icon": "",
+    "currency_2_unit": "EUR",
+    "currency_2_icon": "",
+    "currency_3_unit": "",
+    "currency_3_icon": "",
+    "currency_4_unit": "",
+    "currency_4_icon": "",
+    "currency_5_unit": "",
+    "currency_5_icon": "",
+    "currency_6_unit": "",
+    "currency_6_icon": "",
+    "currency_7_unit": "",
+    "currency_7_icon": "",
+    "currency_8_unit": "",
+    "currency_8_icon": "",
+    "currency_9_unit": "",
+    "currency_9_icon": "",
+    "currency_10_unit": "",
+    "currency_10_icon": "",
+    "enable_ajax": false,
+    "enable_products_cart_sidebar": false,
+    "products_cart_sidebar_title": "You May Also Like",
+    "products_cart_sidebar": "",
+    "enable-search-form": true,
+    "enable-search-trending": true,
+    "search-trending-title": "trending",
+    "search-trending-item-1": "pajamas",
+    "search-trending-item-2": "christmas",
+    "search-trending-item-3": "poster",
+    "search-trending-item-4": "stickers",
+    "search-trending-item-5": "phone case",
+    "search-trending-item-6": "socks",
+    "enable-search-products": false,
+    "search-products-title": "Popular Products",
+    "search-products-list": "",
+    "popular_products_limit": 3,
+    "enable_popup_newsletter": false,
+    "enable_popup_newsletter_mb": false,
+    "when_to_show": "first_time",
+    "popup_newsletter_expire": 1,
+    "popup_newsletter_delay": 10,
+    "newsletter_image": "",
+    "popup_newsletter_subtitle": "BelleDoll Insider",
+    "popup_newsletter_title": "Get on the list",
+    "popup_newsletter_des": "Enter your email below to receive special offers, exclusive discounts and many more!",
+    "enable_someone_purchased": false,
+    "enable_someone_purchased_mb": false,
+    "show_someone_purchased": "left",
+    "autorotate_speed": 8,
+    "text": "Someone recently bought a",
+    "someone_recently_product_1": "",
+    "from_ago_1": "20 minutes ago from Blackburn, UK",
+    "someone_recently_product_2": "",
+    "from_ago_2": "20 minutes ago from Blackburn, UK",
+    "someone_recently_product_3": "",
+    "from_ago_3": "20 minutes ago from Blackburn, UK",
+    "someone_recently_product_4": "",
+    "from_ago_4": "20 minutes ago from Blackburn, UK",
+    "someone_recently_product_5": "",
+    "from_ago_5": "20 minutes ago from Blackburn, UK",
+    "someone_recently_product_6": "",
+    "from_ago_6": "",
+    "someone_recently_product_7": "",
+    "from_ago_7": "",
+    "someone_recently_product_8": "",
+    "from_ago_8": "",
+    "color_someone_purchased": "#787878",
+    "color_link_someone_purchased": "#191919",
+    "color_bg_someone_purchased": "#ffffff",
+    "enable_gdpr": false,
+    "enable_gdpr_mb": false,
+    "show_gdpr": "left",
+    "gdpr_description": "<p>Gymuso Apparel uses cookies to offer you a smoother and more personalised experience. By continuing we assume that you are consenting to all cookies on our website. Read more<\/p>",
+    "enable_recently_viewed_product": false,
+    "enable_recently_viewed_product_mb": false,
+    "enable_progress_bar_shipping": false,
+    "enable_progress_bar_shipping_mb": true,
+    "shipping_price": "100",
+    "enable_before_you_leave": false,
+    "enable_before_you_leave_mb": false,
+    "before_you_leave_expire": 15,
+    "before_you_leave_logo_text": "",
+    "before_you_leave_logo": "",
+    "before_you_leave_bg": "",
+    "before_you_leave_des": "",
+    "before_you_leave_products": "",
+    "enable_compare_product": false,
+    "enable_ask_an_expert": false,
+    "ask_an_expert_header": "Have Questions?",
+    "ask_an_expert_title": "Ask the expert anything on BelleDoll shop",
+    "ask_an_expert_des": "<p>Ask The Automotive Experts anything on Speedo-Demo. We will follow up with you via email within 24-48 hours.<\/p>",
+    "enable_ask_do_you_need": true,
+    "ask_do_you_need": "Do You Need",
+    "ask_do_you_need_1": "Pricing",
+    "ask_do_you_need_2": "Answers",
+    "ask_do_you_need_3": "Both",
+    "ask_form_mess": "What can i help you with today ?",
+    "enable_how_would_you_like_me_to_contact_you": true,
+    "how_would_you_like_me_to_contact_you": "How would you like me to contact you?",
+    "contact_with_you_1": "Phone",
+    "contact_with_you_2": "Email",
+    "contact_with_you_3": "Both",
+    "share_image": "",
+    "social_twitter_link": "https:\/\/instagram.com\/divinegalleryus",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/instagram.com\/divine.gallery",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_email_link": "",
+    "color_body_text": "#5b5b5b",
+    "color_url": "#d4d0c9",
+    "color_url_hover": "#f0c585",
+    "color_body_bg": "#ffffff",
+    "color_heading_text": "#24241c",
+    "color_des_text": "#5b5b5b",
+    "color_section_border": "#191919",
+    "color_section_bg_gray": "#cec9c2",
+    "color_breadcrumb_bg": "#24241c",
+    "color_breadcrumb_text": "#cec9c2",
+    "color_text_field_text": "#cec9c2",
+    "color_text_field_border": "#cec9c2",
+    "color_text_field": "#191919",
+    "color_button_text": "#000000",
+    "color_button_border": "rgba(0,0,0,0)",
+    "color_button_background": "#f2b957",
+    "color_button_secondary_text": "#000000",
+    "color_button_secondary_border": "rgba(0,0,0,0)",
+    "color_button_secondary_background": "#f0c585",
+    "color_button_checkout_text": "#000000",
+    "color_button_checkout_border": "rgba(0,0,0,0)",
+    "color_button_checkout_background": "#f2b957",
+    "color_announcement_bar": "#24241c",
+    "color_bg_announcement_bar": "#cec9c2",
+    "color_text_header": "#ffffff",
+    "color_bg_header": "rgba(0,0,0,0)",
+    "color_search_bar": "#191919",
+    "color_cart_countPill": "#5b5b5b",
+    "color_bg_cart_countPill": "#eff1f0",
+    "color_label_1": "#ffffff",
+    "color_bg_label_1": "#d95949",
+    "color_label_2": "#ffffff",
+    "color_bg_label_2": "#f4ae4d",
+    "color_label_3": "#ffffff",
+    "color_bg_label_3": "#41aed6",
+    "dropdown_text": "#f2b957",
+    "dropdown_text_hover": "#eff1f0",
+    "dropdown_border": "#5b5b5b",
+    "dropdown_background": "#24241c",
+    "color_footer_top": "#eff1f0",
+    "color_bg_footer_top": "#24241c",
+    "color_footer_middle": "#eff1f0",
+    "color_title_footer_middle": "#eff1f0",
+    "color_bg_footer_middle": "#24241c",
+    "color_footer_bottom": "#5b5b5b",
+    "color_bg_footer_bottom": "#24241c",
+    "color_product_vendor": "#d4d0c9",
+    "color_product_title": "#787878",
+    "color_product_review": "#f2b957",
+    "color_product_review_empty": "#cec9c2",
+    "color_product_price": "#787878",
+    "color_product_price_sale": "#f0c585",
+    "color_product_price_presale": "#787878",
+    "color_product_button_text": "#191919",
+    "color_product_button_bg": "#cec9c2",
+    "color_product_button_border": "rgba(0,0,0,0)",
+    "color_badge_text": "#ffffff",
+    "color_badge_bg": "#21201b",
+    "color_new_badge_text": "#21201b",
+    "color_new_badge_bg": "#ffffff",
+    "color_sale_badge_text": "#ffffff",
+    "color_sale_badge_bg": "#f2b957",
+    "color_soldOut_badge_text": "#21201b",
+    "color_soldOut_badge_bg": "#cec9c2",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo2.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#edefee",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#787878",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Roboto",
+    "checkout_accent_color": "#787878",
+    "checkout_button_color": "#f2b957",
+    "checkout_error_color": "#d95949",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1600814984711": {
+            "type": "navigation_list",
+            "settings": {
+              "style_width": 12,
+              "title": "",
+              "navigation": "footer1"
+            }
+          },
+          "7b0e581c-ea91-49e6-bf4a-a41bdeec0c31": {
+            "type": "navigation_list",
+            "settings": {
+              "style_width": 11,
+              "title": "",
+              "navigation": "footer2",
+              "banner_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_365efb6c-d9da-423d-beee-c0c8d3ffcba8.png"
+            }
+          },
+          "83ca2319-9eb1-408d-b09c-2547e831562e": {
+            "type": "navigation_list",
+            "settings": {
+              "style_width": 12,
+              "title": "",
+              "navigation": "footer3"
+            }
+          },
+          "7d25ee92-2074-4f7a-9872-636518fb8b43": {
+            "type": "navigation_list",
+            "settings": {
+              "style_width": 15,
+              "title": "",
+              "navigation": "footer4"
+            }
+          },
+          "11092a5e-a021-4cb8-b73f-64cbdf5c1986": {
+            "type": "about_us",
+            "disabled": true,
+            "settings": {
+              "style_width": 25,
+              "title": "",
+              "description": "<ul class=\"get_help\">\n<li><a href=\"\">Get Help<\/a><\/li>\n<li><a href=\"\">Connect<\/a><\/li>\n<p><\/p>\n<\/ul>"
+            }
+          },
+          "e844923c-71fa-4dc1-acd4-30142f250cbf": {
+            "type": "logo",
+            "settings": {
+              "style_width": 45,
+              "logo_footer_text": "",
+              "logo_max_width": 100,
+              "logo_footer_content": ""
+            }
+          }
+        },
+        "block_order": [
+          "1600814984711",
+          "7b0e581c-ea91-49e6-bf4a-a41bdeec0c31",
+          "83ca2319-9eb1-408d-b09c-2547e831562e",
+          "7d25ee92-2074-4f7a-9872-636518fb8b43",
+          "11092a5e-a021-4cb8-b73f-64cbdf5c1986",
+          "e844923c-71fa-4dc1-acd4-30142f250cbf"
+        ],
+        "settings": {
+          "footer_top": false,
+          "contact_description": "<p>FREE US GROUND SHIPPING ON ORDERS OF $99 OR MORE.FREE GROUND SHIPPING IN CANADA ON ORDERS OF $250 OR MORE<\/p>",
+          "footer_middle": true,
+          "footer_bottom": false,
+          "copyright": "<p>© Copyright 2021, Divine<\/p>",
+          "payment_image_1": "",
+          "payment_image_2": "",
+          "payment_image_3": "",
+          "payment_image_4": "",
+          "payment_image_5": "",
+          "payment_image_6": "",
+          "payment_image_7": "",
+          "payment_image_8": ""
+        }
+      },
+      "faq-template": {
+        "type": "faq-template",
+        "blocks": {
+          "1600741344989": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "Question",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          }
+        },
+        "block_order": [
+          "1600741344989"
+        ],
+        "settings": {
+          "faq_banner": "",
+          "link_1": "",
+          "link_2": "mailto:hello@popmypet.co",
+          "show_faqs_1": true,
+          "faqs_1_title": "Pre-Sales Questions",
+          "show_faqs_2": true,
+          "faqs_2_title": "Theme Questions",
+          "faq_text": ""
+        }
+      },
+      "contact-template": {
+        "type": "contact-template",
+        "settings": {
+          "display_google_map": false,
+          "google_map_code": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "enable_product_reviews": false,
+          "enable_vendor": false,
+          "enable_product_sku": false,
+          "enable_product_availability": false,
+          "enable_short_description": false,
+          "number_words": 22,
+          "type_short_description": "default",
+          "enable_variant_labels": true,
+          "enable_quantity_selector": true,
+          "order_shiping": "Your order will ship in 2-4 weeks",
+          "enable_product_wishlist": false,
+          "enable_payment_button": false,
+          "enable_zoom": true,
+          "enable_fancybox": false,
+          "enable_change_group_image": false,
+          "enable_compare_color": false,
+          "enable_video_product": false,
+          "enable_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "enable_countdown": false,
+          "enable_size_chart": false,
+          "size_chart": "none",
+          "enable_customers_view": false,
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "title_view": "customers are viewing this product",
+          "enable_product_socialShare": false,
+          "worktitle": "Cast Your NFT in 3 Easy Step",
+          "workicon1": "shopify:\/\/shop_images\/b_small_d6085396-c0a2-4334-8785-fa35cd561d86.png",
+          "worktext1": "Open Divine app",
+          "workicon2": "shopify:\/\/shop_images\/aaaa_small_4fa4aab4-422e-4abb-b175-b28b5a065c79.png",
+          "worktext2": "Connect wallet",
+          "workicon3": "shopify:\/\/shop_images\/c_small_a8cef3c9-15ba-48bf-aefe-e8f9e9a871cf.png",
+          "worktext3": "Cast your NFT"
+        }
+      },
+      "product-tab-horizontal": {
+        "type": "product-tab-horizontal",
+        "settings": {
+          "display_product_detail_tabs": true,
+          "display_product_detail_description": true,
+          "product_description_title": "Description",
+          "display_product_reviews": false,
+          "product_review_title": "Customer Reviews"
+        }
+      },
+      "product-add-more": {
+        "type": "product-add-more",
+        "settings": {
+          "enable_product_show_more": false,
+          "collection_title": "Complete The Look",
+          "collection_more": "",
+          "column": 2,
+          "limit": 5
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 60,
+          "bottom": 60,
+          "title": "Other pawducts you might like",
+          "description": "",
+          "column": 5,
+          "limit": 6,
+          "carousel-arrows": false,
+          "carousel-dots": false
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 60,
+          "bottom": 60,
+          "title": "Recently Viewed Products",
+          "description": "",
+          "column": 4,
+          "limit": 6,
+          "carousel-arrows": false,
+          "carousel-dots": false
+        }
+      },
+      "1600814841152": {
+        "type": "image-with-text-2",
+        "blocks": {
+          "ca9c3395-4044-4ae1-9a77-f9e91fe6caec": {
+            "type": "image_item",
+            "settings": {
+              "layout": "right",
+              "image": "shopify:\/\/shop_images\/19.jpg",
+              "subtitle": "",
+              "title": "Endless Possibilities",
+              "description": "We believe that experiences are made from everlasting memories. What better way to create those experiences than with an immersive piece of art. Create a beautiful experience in your home with help from Divine. We make it easy and convenient.",
+              "button": "",
+              "button_link": ""
+            }
+          },
+          "1600814841152-0": {
+            "type": "image_item",
+            "settings": {
+              "layout": "left",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2021-05-26_at_9.54.44_AM.png",
+              "subtitle": "",
+              "title": "Intelligent engagement",
+              "description": "From sound to touch and even 3D capability, our Non-Fungible Tokens create unforgettable modern-day experiences. Turn any space in your home into an interactive crypto NFT art gallery. With our beyond easy set-up, seamlessly pair your wallet and cast your NFTs – that’s it!",
+              "button": "EXPLORE DEVICES",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          }
+        },
+        "block_order": [
+          "ca9c3395-4044-4ae1-9a77-f9e91fe6caec",
+          "1600814841152-0"
+        ],
+        "settings": {
+          "background-color": true,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 0,
+          "bottom": 0,
+          "custom_color": false,
+          "color_heading": "#24241c",
+          "color_text": "#787878",
+          "color_btn_text": "#24241c",
+          "color_btn_border": "rgba(0,0,0,0)",
+          "color_btn_bg": "#f2b957"
+        }
+      },
+      "collection-hero": {
+        "type": "collection-hero",
+        "blocks": {
+          "131849c4-4f12-460e-a048-594ac6209158": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5.gif",
+              "image_mob": "shopify:\/\/shop_images\/H5a4dde2d86774865b029b3b45410e85fM.png",
+              "collection_id": "traveling-case"
+            }
+          }
+        },
+        "block_order": [
+          "131849c4-4f12-460e-a048-594ac6209158"
+        ],
+        "settings": {
+          "enable_bannerImage": true
+        }
+      },
+      "sidebar-collection": {
+        "type": "sidebar-collection",
+        "settings": {
+          "display_sidebar": false,
+          "position_sidebar": "left"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "blocks": {
+          "8fa237ed-1ad5-4d60-8018-fe55c32ec6ed": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "shopify:\/\/shop_images\/60_1.jpg",
+              "mobile_banner_img": "shopify:\/\/shop_images\/60_1.jpg",
+              "description": "<p>Project your favorite Non-Fungible Token art on the go with the Apollo portable projector. Our small but powerful projector is about the size of...<\/p>",
+              "banner_product": "mini-p20-hd-projector"
+            }
+          },
+          "1da535ba-6b32-44c1-bd30-a721b3c1a502": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "shopify:\/\/shop_images\/20.jpg",
+              "mobile_banner_img": "shopify:\/\/shop_images\/21.jpg",
+              "description": "<p>Do you want to take the quality of the entertainment in your home to a whole new level? Create the ultimate NFT art experience...<\/p>",
+              "banner_product": "u30-pro-4k-3d-projector"
+            }
+          },
+          "04e0f609-bafd-4ae2-9b43-a47c865661f9": {
+            "type": "banner",
+            "settings": {
+              "banner_img": "shopify:\/\/shop_images\/22.jpg",
+              "mobile_banner_img": "shopify:\/\/shop_images\/23.jpg",
+              "description": "<p>It’s always good to have choices and more choices. To ensure a great fit in any space, the Vulcan touch display comes in two...<\/p>",
+              "banner_product": "vulcan"
+            }
+          }
+        },
+        "block_order": [
+          "8fa237ed-1ad5-4d60-8018-fe55c32ec6ed",
+          "1da535ba-6b32-44c1-bd30-a721b3c1a502",
+          "04e0f609-bafd-4ae2-9b43-a47c865661f9"
+        ],
+        "settings": {}
+      },
+      "collection-banner": {
+        "type": "collection-banner",
+        "settings": {
+          "enable_layout": false,
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30
+        }
+      },
+      "collection-quotes": {
+        "type": "collection-quotes",
+        "settings": {
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Testimonials",
+          "description": "",
+          "column": 3,
+          "carousel-arrows": true,
+          "carousel-dots": true
+        }
+      },
+      "collections-template": {
+        "type": "collections-template",
+        "blocks": {
+          "1600823716760": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1600823722348": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1600823723975": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1600823729977": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1600823716760",
+          "1600823722348",
+          "1600823723975",
+          "1600823729977"
+        ],
+        "settings": {
+          "display_type": "selected",
+          "sort": "alphabetical",
+          "column": 4
+        }
+      },
+      "collections-products": {
+        "type": "collections-products",
+        "settings": {
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Product List",
+          "description": "",
+          "collection": "",
+          "column": 4,
+          "limit": 6,
+          "carousel-arrows": false,
+          "carousel-dots": false
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_countdown_enable": false,
+          "time_countdown": 10,
+          "cart_ajax_enable": true,
+          "trust_img_enable": false,
+          "cart_notes_enable": false,
+          "show_shipping_calculator": false,
+          "shipping_calculator_default_country": "United States"
+        }
+      },
+      "cart-products": {
+        "type": "cart-products",
+        "settings": {
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "A few recommendations",
+          "description": "",
+          "collection": "adult-apparel-pop-art",
+          "column": 4,
+          "limit": 6,
+          "carousel-arrows": true,
+          "carousel-dots": true
+        }
+      },
+      "product-why-choose-us": {
+        "type": "product-why-choose-us",
+        "blocks": {
+          "1601160404219": {
+            "type": "item",
+            "settings": {
+              "title": "Worldwide Delivery",
+              "description": "We ship portraits globally with fully tracked shipping methods."
+            }
+          },
+          "1601160407343": {
+            "type": "item",
+            "settings": {
+              "title": "Unlimited Revisions",
+              "description": "You get to preview your artwork once it's ready, and you can request any changes you like before we print your order."
+            }
+          },
+          "1601160408205": {
+            "type": "item",
+            "settings": {
+              "title": "Top Customer Support",
+              "description": "Our customer support team work 24\/7 via email, as well as live chat. We're very quick to help, and we all love pets!"
+            }
+          }
+        },
+        "block_order": [
+          "1601160404219",
+          "1601160407343",
+          "1601160408205"
+        ],
+        "settings": {
+          "background-color": "#f0ebd5",
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 0,
+          "bottom": 0,
+          "title": "Why choose us",
+          "description": ""
+        }
+      },
+      "product-how-it-works": {
+        "type": "product-how-it-works",
+        "blocks": {
+          "1601161672721": {
+            "type": "item",
+            "settings": {
+              "title": "Upload photo",
+              "description": "A well lit pet photo will work best.",
+              "image": "shopify:\/\/shop_images\/b.png",
+              "cta_label": ""
+            }
+          },
+          "1601161782439": {
+            "type": "item",
+            "settings": {
+              "title": "Approve Art",
+              "description": "Approve your art and select a background in around 2 days",
+              "image": "shopify:\/\/shop_images\/aaaa.png",
+              "cta_label": ""
+            }
+          },
+          "1601161825772": {
+            "type": "item",
+            "settings": {
+              "title": "Show Off",
+              "description": "Watch your friends be jealous",
+              "image": "shopify:\/\/shop_images\/c.png",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1601161672721",
+          "1601161782439",
+          "1601161825772"
+        ],
+        "settings": {
+          "background-color": "#e9e9e9",
+          "enable_layout": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 50,
+          "bottom": 50,
+          "title": "How it works",
+          "description": ""
+        }
+      },
+      "backgrounds-header": {
+        "type": "backgrounds-header",
+        "settings": {
+          "background-color": true,
+          "top": 40,
+          "bottom": 40,
+          "image": "shopify:\/\/shop_images\/MyPetPrints-Animated-Backgrounds.gif",
+          "title": "When your artwork is ready, \npreview it on dozens of backgrounds \nand pick your favorite!",
+          "button": ""
+        }
+      },
+      "backgrounds-template": {
+        "type": "backgrounds-template",
+        "blocks": {
+          "1601495516883": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870387.jpg",
+              "type": "text"
+            }
+          },
+          "1601495770258": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870389.jpg",
+              "type": "text"
+            }
+          },
+          "1601495779157": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870384.jpg",
+              "type": "text"
+            }
+          },
+          "1601495788414": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870388.jpg",
+              "type": "text"
+            }
+          },
+          "1601495821705": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601377150.jpg",
+              "type": "pop-culture"
+            }
+          },
+          "1601495804159": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601377148.jpg",
+              "type": "pop-culture"
+            }
+          },
+          "1601495813161": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601380272.jpg",
+              "type": "pop-culture"
+            }
+          },
+          "1601495849028": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601377149.jpg",
+              "type": "pop-culture"
+            }
+          },
+          "1601499743744": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601377146.jpg",
+              "type": "pop-culture"
+            }
+          },
+          "1601495867531": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601373371.jpg",
+              "type": "plants"
+            }
+          },
+          "1601495878614": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870397.jpg",
+              "type": "plants"
+            }
+          },
+          "1601495891689": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601373373.jpg",
+              "type": "plants"
+            }
+          },
+          "1601495906354": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870395.jpg",
+              "type": "plants"
+            }
+          },
+          "1601495960349": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870012.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601495940672": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601380270.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601495947362": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870398.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601495917881": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601380269.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601496153141": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870401.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601496027794": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601380271.jpg",
+              "type": "patterns"
+            }
+          },
+          "1601496238306": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870016.jpg",
+              "type": "food"
+            }
+          },
+          "1601496249251": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870015.jpg",
+              "type": "food"
+            }
+          },
+          "1601496261736": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600870014.jpg",
+              "type": "food"
+            }
+          },
+          "1601496273040": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Food30.jpg",
+              "type": "food"
+            }
+          },
+          "1601496321072": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1601380267_61a81471-d2a5-4cba-b093-8f2c1043688b.jpg",
+              "type": "food"
+            }
+          },
+          "1601496360750": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600869295.jpg",
+              "type": "christmas"
+            }
+          },
+          "1601496375549": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600869297.jpg",
+              "type": "christmas"
+            }
+          },
+          "1601496386002": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600869296.jpg",
+              "type": "christmas"
+            }
+          },
+          "1601496397272": {
+            "type": "pattern",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1600869292.jpg",
+              "type": "christmas"
+            }
+          }
+        },
+        "block_order": [
+          "1601495516883",
+          "1601495770258",
+          "1601495779157",
+          "1601495788414",
+          "1601495821705",
+          "1601495804159",
+          "1601495813161",
+          "1601495849028",
+          "1601499743744",
+          "1601495867531",
+          "1601495878614",
+          "1601495891689",
+          "1601495906354",
+          "1601495960349",
+          "1601495940672",
+          "1601495947362",
+          "1601495917881",
+          "1601496153141",
+          "1601496027794",
+          "1601496238306",
+          "1601496249251",
+          "1601496261736",
+          "1601496273040",
+          "1601496321072",
+          "1601496360750",
+          "1601496375549",
+          "1601496386002",
+          "1601496397272"
+        ],
+        "settings": {
+          "background-color": false,
+          "top": 40,
+          "bottom": 40,
+          "title": "Endless Backgrounds to Choose From",
+          "description": "Here is where you can browse all the background options we offer. When your artwork is completed, you can preview and select any of these patterned or solid colour backgrounds, or have no background. Once you approve the artwork and pick your background, we print your product!",
+          "footer_title": "We offer a 100% satisfaction guarantee on all artwork and unlimited revisions. We don’t print your product until you’re happy!",
+          "button": "Shop Now",
+          "button_link": "shopify:\/\/collections\/all",
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "choose-your-art-template": {
+        "type": "choose-your-art-template",
+        "blocks": {
+          "1601590735019": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/canvas-art-styles-pop-art.jpg",
+              "button": "Pop Art",
+              "button_link": "\/"
+            }
+          },
+          "1601590785560": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/canvas-art-styles-pop-icon.jpg",
+              "button": "Pop Icon",
+              "button_link": "\/"
+            }
+          },
+          "1601590805176": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/canvas-art-styles-super-portrait.jpg",
+              "button": "Super Portraits",
+              "button_link": "\/"
+            }
+          }
+        },
+        "block_order": [
+          "1601590735019",
+          "1601590785560",
+          "1601590805176"
+        ],
+        "settings": {
+          "background-color": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Choose Your Art Style",
+          "description": "",
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": ""
+        }
+      },
+      "backgrounds-pop-art": {
+        "type": "backgrounds-pop-art",
+        "blocks": {
+          "820ae87c-075d-49ef-9582-07b37b2c25ad": {
+            "type": "pattern",
+            "settings": {
+              "type": "text"
+            }
+          }
+        },
+        "block_order": [
+          "820ae87c-075d-49ef-9582-07b37b2c25ad"
+        ],
+        "settings": {
+          "background-color": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Title",
+          "description": "",
+          "footer_title": "Footer Title",
+          "button": "",
+          "custom_color": false,
+          "color_heading": "rgba(0,0,0,0)",
+          "color_text": "rgba(0,0,0,0)",
+          "color_btn_text": "rgba(0,0,0,0)",
+          "color_btn_border": "rgba(0,0,0,0)",
+          "color_btn_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "backgrounds-pop-chic": {
+        "type": "backgrounds-pop-chic",
+        "settings": {
+          "background-color": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Title",
+          "description": "",
+          "footer_title": "Footer Title",
+          "button": "",
+          "custom_color": false,
+          "color_heading": "rgba(0,0,0,0)",
+          "color_text": "rgba(0,0,0,0)",
+          "color_btn_text": "rgba(0,0,0,0)",
+          "color_btn_border": "rgba(0,0,0,0)",
+          "color_btn_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "support-template": {
+        "type": "support-template",
+        "settings": {
+          "header_image": "shopify:\/\/shop_images\/Untitled_design_8.jpg",
+          "content_title": "Got a question?",
+          "content_subtitle": "Our Wag & Purr team is here to help!",
+          "faq_label": "Find an answer",
+          "faq_description": "Check our FAQ",
+          "faq_link": "shopify:\/\/pages\/frequently-asked-questions",
+          "chat_label": "Chat with us",
+          "chat_description": "Estimated wait: 10 mins",
+          "chat_link": "\/",
+          "email_label": "Email us",
+          "email_description": "Estimated wait: 45 minutes",
+          "email_link": "mailto:hello@popmypet.co",
+          "footer_image": "shopify:\/\/shop_images\/Dog_4.png",
+          "footer_title": "From the press?",
+          "footer_description": "<p>For media inquires, email us at <a title=\"mailto:hello@popmypet.co\" href=\"mailto:hello@popmypet.co\">hello@popmypet.co<\/a><\/p>"
+        }
+      },
+      "16180201742f2be3a3": {
+        "type": "rich-text",
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top_content": 30,
+          "top": 0,
+          "bottom": 30,
+          "full_width": false,
+          "text_align": "text-center",
+          "section_title": "NFTs Made \"Phygital\"",
+          "text": "<p>Your NFT art and collectibles should not be kept hidden away in your wallet. Instead, they should be used to turn your walls into a dynamic, personalized gallery that completely customizes your space. Your home should be as unique as you are. Divine is here to help!<br\/><\/p><p>Let's take your NFT art and make it physically digital or as we like to say, <em>phygital<\/em>.<\/p>",
+          "title_size": "medium",
+          "text_size": "small",
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": ""
+        }
+      },
+      "1618773688891dfe44": {
+        "type": "newsletter",
+        "disabled": true,
+        "settings": {
+          "background-color": true,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Never Miss A new Feature",
+          "description": "Subscribe to receive software updates, news & giveaways.<br>\n<i>We hate spam just as much as you.<\/i>",
+          "custom_color": false,
+          "color_heading": "#eff1f0",
+          "color_text": "#cec9c2"
+        }
+      },
+      "1619203728ed35ec85": {
+        "type": "custom-banner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/15.jpg",
+          "banner_image_mob": "shopify:\/\/shop_images\/17.jpg",
+          "heading": "From your wallet to your wall,<br>enjoy all of your NFTs with ease.",
+          "btn_banner": "EXPLORE DEVICES",
+          "btn_link": "shopify:\/\/collections\/frontpage"
+        }
+      },
+      "16192073825884a956": {
+        "type": "custom-from-phone",
+        "settings": {
+          "title": "With a style to match everyone’s preference,<br>it’s easy to switch to NFT token art.",
+          "btn": "EXPLORE DEVICES",
+          "btn_link": "shopify:\/\/collections\/frontpage",
+          "image": "shopify:\/\/shop_images\/18.jpg",
+          "image_mob": "shopify:\/\/shop_images\/27.jpg"
+        }
+      },
+      "1619212773c66236b3": {
+        "type": "custom-block",
+        "blocks": {
+          "a9f9cf71-2afb-4950-86bd-0a0f339ee7e2": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/screen.png",
+              "title-step": "Step 1",
+              "content": "Open the Divine App on your device."
+            }
+          },
+          "1d07f181-8c60-47ae-8210-696479b67abd": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2b.png",
+              "title-step": "Step 2",
+              "content": "Pair your wallet from any web browser."
+            }
+          },
+          "3d69fb0e-189e-4ab5-be7f-068c33402678": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3c.png",
+              "title-step": "Step 3",
+              "content": "Cast chosen Non-Fungible Tokens to your device."
+            }
+          }
+        },
+        "block_order": [
+          "a9f9cf71-2afb-4950-86bd-0a0f339ee7e2",
+          "1d07f181-8c60-47ae-8210-696479b67abd",
+          "3d69fb0e-189e-4ab5-be7f-068c33402678"
+        ],
+        "settings": {
+          "title": "Easy setup, effortless sharing",
+          "title-second": "From box to displaying NFTs in under 4 minutes"
+        }
+      },
+      "collection-table": {
+        "type": "collection-table",
+        "blocks": {
+          "28c6ffbb-b965-414b-ad32-dac5533b747b": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
+              "title": "Apollo",
+              "content": "Portable Projector"
+            }
+          },
+          "aebeaf24-8ff6-4df7-83b2-bf57202af25f": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_2.jpg",
+              "title": "Zeus",
+              "content": "Ultra-res, 3D projector"
+            }
+          },
+          "4f3a9834-07af-42b1-9d30-610ed8ea55e0": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mock_up2.png",
+              "title": "Vulcan",
+              "content": "Digital touch display"
+            }
+          },
+          "49151d37-ec87-43d8-ad4d-9f6259013c64": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mock_up2.png",
+              "title": "Vulcan 2",
+              "content": "Digital touch display"
+            }
+          }
+        },
+        "block_order": [
+          "28c6ffbb-b965-414b-ad32-dac5533b747b",
+          "aebeaf24-8ff6-4df7-83b2-bf57202af25f",
+          "4f3a9834-07af-42b1-9d30-610ed8ea55e0",
+          "49151d37-ec87-43d8-ad4d-9f6259013c64"
+        ],
+        "settings": {
+          "heading": "Which device is right for <br>you?",
+          "html": "<table>\n<tbody>\n<tr>\n<th class=\"A1\"><span>Overall Size<\/span><\/th>\n<td class=\"B1\"><span>Test goes here<\/span><\/td>\n<td class=\"C1\"><span>Test goes here<\/span><\/td>\n<td class=\"D1\"><span>Test goes here<\/span><\/td>\n<td class=\"E1\"><span>Test goes here<\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A2\"><span>Max Display<\/span><\/th>\n<td class=\"B2\"><span>Test goes here<\/span><\/td>\n<td class=\"C2\"><span>Test goes here<\/span><\/td>\n<td class=\"D2\"><span>Test goes here<\/span><\/td>\n<td class=\"E2\"><span>Test goes here<\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A3\"><span>Resolution<\/span><\/th>\n<td class=\"B3\"><span>Test goes here<\/span><\/td>\n<td class=\"C3\"><span>Test goes here<\/span><\/td>\n<td class=\"D3\"><span>Test goes here<\/span><\/td>\n<td class=\"E3\"><span>Test goes here<\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A4\"><span>Weight<\/span><\/th>\n<td class=\"B4\"><span>Test goes here<\/span><\/td>\n<td class=\"C4\"><span>Test goes here<\/span><\/td>\n<td class=\"D4\"><span>Test goes here<\/span><\/td>\n<td class=\"E4\"><span>Test goes here<\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A5\"><span>WiFi Enabled<\/span><\/th>\n<td class=\"B5\"><span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"C5\"><span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"D5\"><span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"E5\"><span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A6\"><span>Sound<\/span><\/th>\n<td class=\"B6\"><span>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"C6\"><span>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"D6\"><span>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<td class=\"E6\"><span>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0556\/6529\/5509\/files\/tick.png?v=1619477743\"><\/span><\/td>\n<\/tr>\n<tr>\n<th class=\"A7\"><span>Main Feature<\/span><\/th>\n<td class=\"B7\"><span>Test goes here<\/span><\/td>\n<td class=\"C7\"><span>Test goes here<\/span><\/td>\n<td class=\"D7\"><span>Test goes here<\/span><\/td>\n<td class=\"E7\"><span>Test goes here<\/span><\/td>\n<\/tr>\n<tr>\n<td class=\"B8\"><span><\/span><\/td>\n<td class=\"B8\"><a href=\"#\">Learn more<\/a><\/td>\n<td class=\"C8\"><a href=\"#\">Learn more<\/a><\/td>\n<td class=\"D8\"><a href=\"#\">Learn more<\/a><\/td>\n<td class=\"E8\"><a href=\"#\">Learn more<\/a><\/td>\n<\/tr>\n<\/tbody>\n<\/table>"
+        }
+      },
+      "custom-how-it-banner": {
+        "type": "custom-how-it-banner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/5.gif",
+          "heading": "From phone to frame,<br> Hassel-Free, Memorable Experience",
+          "btn_banner": "Explore Collections",
+          "btn_link": "shopify:\/\/collections\/frontpage"
+        }
+      },
+      "custom-how-it-block": {
+        "type": "custom-how-it-block",
+        "blocks": {
+          "259b2ba9-d173-4f01-b0ad-255871eebc80": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/screen.png",
+              "title-step": "Step 1",
+              "content": "",
+              "sub-content": "Open the Divine App on your device."
+            }
+          },
+          "65b3f81e-ff68-4e8d-a791-8896e5a28cb7": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2b.png",
+              "title-step": "Step 2",
+              "content": "",
+              "sub-content": "Pair your wallet from any web browser."
+            }
+          },
+          "aae66e17-e23d-42ad-b17a-35bc6746b9ba": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3_4469336b-5215-45f4-a9a3-388d5dab490f.png",
+              "title-step": "Step 3",
+              "content": "",
+              "sub-content": "Cast chosen Non-Fungible Tokens to your device."
+            }
+          }
+        },
+        "block_order": [
+          "259b2ba9-d173-4f01-b0ad-255871eebc80",
+          "65b3f81e-ff68-4e8d-a791-8896e5a28cb7",
+          "aae66e17-e23d-42ad-b17a-35bc6746b9ba"
+        ],
+        "settings": {
+          "title": "Easy setup, effortless casting",
+          "title-second": "From box to displaying NFTs in under 4 minutes"
+        }
+      },
+      "custom-how-html": {
+        "type": "custom-how-html",
+        "settings": {
+          "heading": "Why Divine?",
+          "content": "From phone to frame,<br>\nenjoy all of your NFTs with ease"
+        }
+      },
+      "custom-image-with-text": {
+        "type": "custom-image-with-text",
+        "blocks": {
+          "9382c970-dc5f-464c-b56b-851133726b84": {
+            "type": "image_item",
+            "settings": {
+              "layout": "right",
+              "image": "shopify:\/\/shop_images\/4.gif",
+              "subtitle": "",
+              "title": "NFTs come alive",
+              "description": "We believe experiences are made from memories that last a lifetime. From sound to touch and even 3D capability, our devices are made for modern-day experiences. Turn any space into an interactive gallery for all of your senses. Simply pair your wallet and cast your Non-Fungible Tokens. Just like that, you’re ready to bring your NFT art alive. It’s easy and absolutely unforgettable.",
+              "button": "",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "dcf2f378-3564-4519-97a7-f50c9193a51a": {
+            "type": "image_item",
+            "settings": {
+              "layout": "left",
+              "image": "shopify:\/\/shop_images\/30.jpg",
+              "subtitle": "",
+              "title": "Intelligent updates",
+              "description": "The NFTs crypto space is rapidly changing and growing. Through it all, Divine devices stay ready and stable. Frequent updates are pushed for free to increase capability, performance, and safety. We keep your devices constantly up to date and free of glitches or headaches. Use our easy interface to cast between your Divine devices.",
+              "button": "",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          }
+        },
+        "block_order": [
+          "9382c970-dc5f-464c-b56b-851133726b84",
+          "dcf2f378-3564-4519-97a7-f50c9193a51a"
+        ],
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "how-made-banner": {
+        "type": "how-made-banner",
+        "settings": {
+          "title": "<h1>From your wallet to your wall,<br> enjoy all of your NFTs with ease.<\/h1>",
+          "btn": "Explore Devices",
+          "btn_link": "shopify:\/\/collections\/frontpage",
+          "image": "shopify:\/\/shop_images\/frame_collection_hp_2000w-c8123d7d367fc141f9069e3cfbc4ab4fb0450f5ba82e76f26d6bc5deacdd3fc1.png"
+        }
+      },
+      "how-it-work-product": {
+        "type": "how-it-work-product",
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Explore our devices",
+          "description": "From portable to durable, there's a style fit for you",
+          "link": "",
+          "collection": "frontpage",
+          "collection_layout": "grid",
+          "column": 3,
+          "limit": 3,
+          "carousel-arrows": false,
+          "carousel-dots": false,
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "custom-contact": {
+        "type": "custom-contact",
+        "settings": {
+          "heading": "CONTACT US",
+          "content": "<p>For general inquiries or questions regarding sales or press, please leave your contact information below and we will get back to you as soon as possible.<\/p>"
+        }
+      },
+      "product-appollo-block": {
+        "type": "product-appollo-block",
+        "blocks": {
+          "dcbe7469-e379-405d-89a5-70d14eb05ab6": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Portable",
+              "content": "Small and size and lightweight"
+            }
+          },
+          "2be9f638-f6d1-4127-aacd-3b4cc9812186": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "WiFi enabled",
+              "content": "Connect & cast  in minutes"
+            }
+          },
+          "f675cf33-32b3-45a3-800a-a2d7a19b71bd": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "High-res",
+              "content": "1920x1080p resolution"
+            }
+          },
+          "803dab93-7c87-4615-aa38-cad20523fdc1": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Big Display",
+              "content": "project anywhere up to 200\""
+            }
+          },
+          "da50ac4b-5c38-430d-9223-4c44605c5526": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Portable",
+              "content": "Small and size and lightweight"
+            }
+          },
+          "72a8d67c-fd0f-47db-9412-1f9b17b58d2b": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "WiFi enabled",
+              "content": "Connect & cast in minutes"
+            }
+          },
+          "350f69d0-d5e0-4191-bfdb-d9d3217c050e": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "High-res",
+              "content": "1920x1080p resolution"
+            }
+          },
+          "abc43980-f5ec-4f4f-af44-7647dc1e21a9": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Big Display",
+              "content": "project anywhere up to 200\""
+            }
+          }
+        },
+        "block_order": [
+          "dcbe7469-e379-405d-89a5-70d14eb05ab6",
+          "2be9f638-f6d1-4127-aacd-3b4cc9812186",
+          "f675cf33-32b3-45a3-800a-a2d7a19b71bd",
+          "803dab93-7c87-4615-aa38-cad20523fdc1",
+          "da50ac4b-5c38-430d-9223-4c44605c5526",
+          "72a8d67c-fd0f-47db-9412-1f9b17b58d2b",
+          "350f69d0-d5e0-4191-bfdb-d9d3217c050e",
+          "abc43980-f5ec-4f4f-af44-7647dc1e21a9"
+        ],
+        "settings": {
+          "title": "A powerful projector that fits in your palm",
+          "title-second": "<p>Project your favorite NFTs up to 200” on-the-go or at home with Apollo.  About the size of a soda can, and as light as an iPhone, Apollo can create a gallery whenever and wherever you want.<\/p>\n<span>Main features<\/span>",
+          "title-sub": "*all Divine device receive free ongoing software updates"
+        }
+      },
+      "appolo-image-with-blockcontent": {
+        "type": "appolo-image-with-blockcontent",
+        "blocks": {
+          "c5f895df-5627-43bc-8de4-e171f23c87b2": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Brightness",
+              "content": "350cd\/m²"
+            }
+          },
+          "264ad6ef-6846-4d3d-8c33-edaad992f8a5": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Contrast",
+              "content": "2000:1"
+            }
+          },
+          "e0483b24-456b-43e7-bc3a-2f984bb4c357": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Screen ratio",
+              "content": "16:9"
+            }
+          },
+          "150578d4-8bdb-4bfa-b8d4-7c19392fb117": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Refresh rate",
+              "content": "60Hz"
+            }
+          },
+          "2cf9355a-9c46-4f54-9371-fc6badff0bd2": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Weight",
+              "content": "-25 pounds"
+            }
+          },
+          "ad1204dc-9c9c-4465-8ebb-607fa273c23c": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "System OS",
+              "content": "Android 6.0"
+            }
+          },
+          "a04df48f-f07c-4c14-b42a-a565bd5d1fa3": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Overall size",
+              "content": "781 x 476 x 73mm"
+            }
+          },
+          "9f16248b-7efc-4631-b729-a7056ffe31ec": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Resolution",
+              "content": "1920*1080"
+            }
+          },
+          "fc546ccb-5ab4-43a5-8986-769e1460773f": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Resolution",
+              "content": "1920*1080"
+            }
+          }
+        },
+        "block_order": [
+          "c5f895df-5627-43bc-8de4-e171f23c87b2",
+          "264ad6ef-6846-4d3d-8c33-edaad992f8a5",
+          "e0483b24-456b-43e7-bc3a-2f984bb4c357",
+          "150578d4-8bdb-4bfa-b8d4-7c19392fb117",
+          "2cf9355a-9c46-4f54-9371-fc6badff0bd2",
+          "ad1204dc-9c9c-4465-8ebb-607fa273c23c",
+          "a04df48f-f07c-4c14-b42a-a565bd5d1fa3",
+          "9f16248b-7efc-4631-b729-a7056ffe31ec",
+          "fc546ccb-5ab4-43a5-8986-769e1460773f"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/tab.jpg",
+          "title": "Tech specs"
+        }
+      },
+      "apollo-but-box": {
+        "type": "apollo-but-box",
+        "blocks": {
+          "6bbb2b6c-8c46-4286-bebe-a1b4c2147810": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Projector"
+            }
+          },
+          "16de15d4-5392-414e-85e2-d94979b5db4f": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Remote"
+            }
+          },
+          "bca3302e-f74d-44d9-9a39-17cb1be16036": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Power supply"
+            }
+          },
+          "65aed415-6d37-4ce3-86df-a0662cc828b6": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x HDMI"
+            }
+          }
+        },
+        "block_order": [
+          "6bbb2b6c-8c46-4286-bebe-a1b4c2147810",
+          "16de15d4-5392-414e-85e2-d94979b5db4f",
+          "bca3302e-f74d-44d9-9a39-17cb1be16036",
+          "65aed415-6d37-4ce3-86df-a0662cc828b6"
+        ],
+        "settings": {
+          "title": "What's in the box"
+        }
+      },
+      "apollo-image-button": {
+        "type": "apollo-image-button",
+        "blocks": {
+          "10609ff1-92ee-4dc6-aa75-5e84a5b17517": {
+            "type": "images-button",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/btn1.jpg",
+              "content": "Standing tripod",
+              "btn-title1": "learn more",
+              "url1": "#"
+            }
+          }
+        },
+        "block_order": [
+          "10609ff1-92ee-4dc6-aa75-5e84a5b17517"
+        ],
+        "settings": {
+          "title": "Compatible accessories"
+        }
+      },
+      "apollo-accordion": {
+        "type": "apollo-accordion",
+        "blocks": {
+          "d4a27e18-e591-4b36-98fb-30b27c0ff039": {
+            "type": "first-section",
+            "settings": {
+              "question": "What is Lorem Ipsum?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            }
+          },
+          "5ceec925-ba8f-42c9-a450-fbe829e2e742": {
+            "type": "first-section",
+            "settings": {
+              "question": "Where does it come from?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            }
+          },
+          "e772e5c9-4625-415a-8d72-195527dee3fe": {
+            "type": "first-section",
+            "settings": {
+              "question": "Where does it come from?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            }
+          },
+          "57f6d346-997c-4734-965e-37bf7505aeab": {
+            "type": "first-section",
+            "settings": {
+              "question": "Where does it come from?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            }
+          }
+        },
+        "block_order": [
+          "d4a27e18-e591-4b36-98fb-30b27c0ff039",
+          "5ceec925-ba8f-42c9-a450-fbe829e2e742",
+          "e772e5c9-4625-415a-8d72-195527dee3fe",
+          "57f6d346-997c-4734-965e-37bf7505aeab"
+        ],
+        "settings": {
+          "title": "Frequently asked questions"
+        }
+      },
+      "apollo-images": {
+        "type": "apollo-images",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/black.jpg",
+          "image1": "shopify:\/\/shop_images\/seond.jpg",
+          "image2": "shopify:\/\/shop_images\/third.jpg"
+        }
+      },
+      "product-zeus-block": {
+        "type": "product-zeus-block",
+        "blocks": {
+          "3557b1c9-7f3d-42fe-88ea-34911c78cdd8": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Portable",
+              "content": "Small and size and lightweight"
+            }
+          },
+          "fbac26ab-ab51-4a58-854d-63840529e117": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "WiFi enabled",
+              "content": "Connect & cast in minutes"
+            }
+          },
+          "5442d6d1-a6c8-478f-8fe2-16714b9e4da2": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "High-res",
+              "content": "1920x1980p resolution"
+            }
+          },
+          "30a37563-e24d-44e8-9268-13632208f440": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Big display",
+              "content": "Project anywhere uo to 200\""
+            }
+          },
+          "97752f0f-e353-4cf1-b7cf-49ea80b999b7": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Portable",
+              "content": "Small and size and lightweight"
+            }
+          },
+          "2a352396-50dc-4e58-bf9d-0d60417a2202": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "WiFi enabled",
+              "content": "Connect & cast in minutes"
+            }
+          },
+          "b3fca13a-d27a-4a47-b28d-df12c8ff7724": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "High-res",
+              "content": "1920x1980p resolution"
+            }
+          },
+          "9a6427b8-b3f2-4187-8c71-f924dbad7067": {
+            "type": "first-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title-step": "Big display",
+              "content": "Project anywhere uo to 200\""
+            }
+          }
+        },
+        "block_order": [
+          "3557b1c9-7f3d-42fe-88ea-34911c78cdd8",
+          "fbac26ab-ab51-4a58-854d-63840529e117",
+          "5442d6d1-a6c8-478f-8fe2-16714b9e4da2",
+          "30a37563-e24d-44e8-9268-13632208f440",
+          "97752f0f-e353-4cf1-b7cf-49ea80b999b7",
+          "2a352396-50dc-4e58-bf9d-0d60417a2202",
+          "b3fca13a-d27a-4a47-b28d-df12c8ff7724",
+          "9a6427b8-b3f2-4187-8c71-f924dbad7067"
+        ],
+        "settings": {
+          "title": "Project massively, in high definition and 3D",
+          "title-second": "<p>Project your favorite NFTs up to 200\" on-the-go or at home with Apollo. About the size of a soda can, and as light as an iPhone, Apollo can create a gallery whenever and wherever you want.<\/p>\n<span> main features<\/span>",
+          "title-sub": "*all Divine device receive free ongoing software updates"
+        }
+      },
+      "zeus-image-with-blockcontent": {
+        "type": "zeus-image-with-blockcontent",
+        "blocks": {
+          "9c3854ae-4c96-4986-8757-35204b992dc1": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Brightness",
+              "content": "350cd\/m²"
+            }
+          },
+          "9b171ba1-04c6-43ca-847e-4390c7b03aa1": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Contrast",
+              "content": "2000:1"
+            }
+          },
+          "1a6b8a39-e47d-4639-b326-dfd61fdba090": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Screen ratio",
+              "content": "16:9"
+            }
+          },
+          "a803c67f-8ca2-4327-92a3-66e39b51c2b3": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Refresh rate",
+              "content": "60Hz"
+            }
+          },
+          "5c7ed11f-de81-4795-9223-eb77a9db8ad7": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Weight",
+              "content": "-25 pounds"
+            }
+          },
+          "90a2d2d0-3459-4a73-94dd-ae8cd02eabeb": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "System OS",
+              "content": "Android 6.0"
+            }
+          },
+          "4ef0ae8a-f1b3-4cf5-b318-80bd6ef20574": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Overall size",
+              "content": "781 x 476 x73mm"
+            }
+          },
+          "05d3f0c5-2ccc-4956-99fa-3ee68b8afb08": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Resolution",
+              "content": "1920*1080"
+            }
+          },
+          "55fed211-8e37-4ab5-a791-e6b9ac19f0b6": {
+            "type": "content-section",
+            "settings": {
+              "title-1": "Resolution",
+              "content": "1920*1080"
+            }
+          }
+        },
+        "block_order": [
+          "9c3854ae-4c96-4986-8757-35204b992dc1",
+          "9b171ba1-04c6-43ca-847e-4390c7b03aa1",
+          "1a6b8a39-e47d-4639-b326-dfd61fdba090",
+          "a803c67f-8ca2-4327-92a3-66e39b51c2b3",
+          "5c7ed11f-de81-4795-9223-eb77a9db8ad7",
+          "90a2d2d0-3459-4a73-94dd-ae8cd02eabeb",
+          "4ef0ae8a-f1b3-4cf5-b318-80bd6ef20574",
+          "05d3f0c5-2ccc-4956-99fa-3ee68b8afb08",
+          "55fed211-8e37-4ab5-a791-e6b9ac19f0b6"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/img1.png",
+          "title": "Tech specs"
+        }
+      },
+      "zeus-but-box": {
+        "type": "zeus-but-box",
+        "blocks": {
+          "75d885b1-4db5-4eed-84a0-8d8abce3c147": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Projector"
+            }
+          },
+          "39346be8-a079-4cd8-942b-cba9b209bc69": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Remote"
+            }
+          },
+          "307a0fbb-98c9-4765-a8fe-64eac0e47056": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x Power Supply"
+            }
+          },
+          "bcdd74de-6bfb-4c21-91ff-5b27006cb859": {
+            "type": "box-section",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "content": "1x HDMI"
+            }
+          }
+        },
+        "block_order": [
+          "75d885b1-4db5-4eed-84a0-8d8abce3c147",
+          "39346be8-a079-4cd8-942b-cba9b209bc69",
+          "307a0fbb-98c9-4765-a8fe-64eac0e47056",
+          "bcdd74de-6bfb-4c21-91ff-5b27006cb859"
+        ],
+        "settings": {
+          "title": "What's in the box"
+        }
+      },
+      "zeus-image-button": {
+        "type": "zeus-image-button",
+        "blocks": {
+          "c3af7191-04ae-4803-9c8d-2c13fdbb82ba": {
+            "type": "images-button",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img2.jpg",
+              "content": "Mini wall mount",
+              "btn-title": "Learn more",
+              "url": "#"
+            }
+          },
+          "93b9b8d4-c22a-4871-9647-21d0708c3407": {
+            "type": "images-button",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img3.jpg",
+              "content": "Standing tripod",
+              "btn-title": "Learn more",
+              "url": "#"
+            }
+          },
+          "a58584fe-e8f1-4fcb-b072-b465d256082e": {
+            "type": "images-button",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img4.jpg",
+              "content": "Ceiling mount",
+              "btn-title": "Learn more",
+              "url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "c3af7191-04ae-4803-9c8d-2c13fdbb82ba",
+          "93b9b8d4-c22a-4871-9647-21d0708c3407",
+          "a58584fe-e8f1-4fcb-b072-b465d256082e"
+        ],
+        "settings": {
+          "title": "Compatible mounts"
+        }
+      },
+      "zeus-accordion": {
+        "type": "zeus-accordion",
+        "blocks": {
+          "016eaf0d-e639-493b-9be9-c932d7354398": {
+            "type": "first-section",
+            "settings": {
+              "question": "Why do we use it?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old"
+            }
+          },
+          "162c57d1-51dc-4a3c-9b50-3bebaea3d895": {
+            "type": "first-section",
+            "settings": {
+              "question": "Where can I get some?",
+              "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old"
+            }
+          },
+          "5330db05-47f0-472e-90ca-29e760dd6897": {
+            "type": "first-section",
+            "settings": {
+              "question": "Where does it come from?",
+              "answer": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+            }
+          },
+          "0162fd7f-c76b-4246-8384-fd7b4ffe600b": {
+            "type": "first-section",
+            "settings": {
+              "question": "What is Lorem Ipsum?",
+              "answer": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
+            }
+          }
+        },
+        "block_order": [
+          "016eaf0d-e639-493b-9be9-c932d7354398",
+          "162c57d1-51dc-4a3c-9b50-3bebaea3d895",
+          "5330db05-47f0-472e-90ca-29e760dd6897",
+          "0162fd7f-c76b-4246-8384-fd7b4ffe600b"
+        ],
+        "settings": {
+          "title": "Frequently asked questions"
+        }
+      },
+      "zeus-images": {
+        "type": "zeus-images",
+        "settings": {
+          "image-1": "shopify:\/\/shop_images\/H5a4dde2d86774865b029b3b45410e85fM.png",
+          "image-1-mob": "shopify:\/\/shop_images\/94323_18035126839239540_high_3558ee70-3d4b-4797-8448-a9447120d50e.png",
+          "image-2": "shopify:\/\/shop_images\/image_2021_04_25T17_15_23_583Z.png",
+          "image-2-mob": "shopify:\/\/shop_images\/94323_18118057696043744_high.png",
+          "image-3": "shopify:\/\/shop_images\/Screen_Shot_2021-04-26_at_1.01.44_PM_1.png",
+          "image-3-mob": "shopify:\/\/shop_images\/94323_18108873652099276_high.png"
+        }
+      },
+      "product-template-zeus": {
+        "type": "product-template-zeus",
+        "settings": {
+          "check_title": "Bundle it up with accessories",
+          "check_text": "Save 20% with your pre-order",
+          "enable_product_reviews": false,
+          "enable_vendor": false,
+          "enable_product_sku": false,
+          "enable_product_availability": false,
+          "enable_short_description": false,
+          "number_words": 22,
+          "type_short_description": "default",
+          "enable_variant_labels": false,
+          "enable_quantity_selector": true,
+          "order_shiping": "Your order will ship in 2-4 weeks",
+          "enable_product_wishlist": false,
+          "enable_payment_button": false,
+          "enable_zoom": false,
+          "enable_fancybox": false,
+          "enable_change_group_image": false,
+          "enable_compare_color": false,
+          "enable_video_product": false,
+          "enable_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "enable_countdown": false,
+          "enable_size_chart": false,
+          "size_chart": "none",
+          "enable_customers_view": false,
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "title_view": "customers are viewing this product",
+          "enable_product_socialShare": false,
+          "worktitle": "How it works",
+          "workicon1": "shopify:\/\/shop_images\/b_small_d6085396-c0a2-4334-8785-fa35cd561d86.png",
+          "worktext1": "Open Divine app",
+          "workicon2": "shopify:\/\/shop_images\/aaaa_small_4fa4aab4-422e-4abb-b175-b28b5a065c79.png",
+          "worktext2": "Connect wallet",
+          "workicon3": "shopify:\/\/shop_images\/c_small_a8cef3c9-15ba-48bf-aefe-e8f9e9a871cf.png",
+          "worktext3": "Cast your NFT"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "12c27ba0-662b-4946-893d-6855f00adf83": {
+            "type": "style_4",
+            "settings": {
+              "megamenu_items_4": "Devices",
+              "banner_image_4_1": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
+              "title_banner_image_4_1": "Apollo",
+              "link_banner_image_4_1": "shopify:\/\/products\/mini-p20-hd-projector",
+              "banner_image_4_2": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_2.jpg",
+              "title_banner_image_4_2": "Zeus",
+              "title_banner_image_4_2_2": "4K, 3D capable",
+              "title_banner_image_4_2_3": "Projector",
+              "link_banner_image_4_2": "shopify:\/\/products\/u30-pro-4k-3d-projector",
+              "banner_image_4_3": "shopify:\/\/shop_images\/47.gif",
+              "title_banner_image_4_3": "Vulcan",
+              "link_banner_image_4_3": "shopify:\/\/products\/vulcan",
+              "title_banner_image_4_4": "",
+              "link_banner_image_4_4": "",
+              "text_breadcrumb_4": "More offers",
+              "link_breadcrumb_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "12c27ba0-662b-4946-893d-6855f00adf83"
+        ],
+        "settings": {
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Made in the USA with ❤️",
+          "enable-header-account": true,
+          "header-account-position": "right",
+          "enable-header-search": false,
+          "header-search-position": "right",
+          "enable-header-wishlist": false,
+          "header-wishlist-position": "right",
+          "enable-header-cart": true,
+          "header-cart-position": "right",
+          "btn": "Browse Devices",
+          "btn_link": "shopify:\/\/collections\/all",
+          "main_linklist": "home-menu-2",
+          "label_1": "",
+          "label_1_collection": "",
+          "label_2": "",
+          "label_2_collection": "",
+          "label_3": "",
+          "label_3_collection": "",
+          "enable_megamenu": true,
+          "btn1": "Learn More",
+          "url1": "shopify:\/\/pages\/how-it-work",
+          "btn2": "Explore All",
+          "url2": "shopify:\/\/collections\/all"
+        }
+      },
+      "beauty-framed": {
+        "type": "beauty-framed",
+        "settings": {
+          "title": "Our Most Technically Sophisticated Noise-Cancelling",
+          "text": "Built for Life On-the-Go: The ultimate companion for your daily listening or travels, the MW65’s are our lightest over-ear noise-cancelling wireless headphones and feature.",
+          "worktitle": "",
+          "worktext1": "",
+          "worktext2": "",
+          "worktext3": ""
+        }
+      },
+      "main-features": {
+        "type": "main-features",
+        "blocks": {
+          "fb2bf4f9-388b-49fe-adfd-59208d09fd3f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Touchscreen",
+              "text": "Easy, natural experience"
+            }
+          },
+          "986f0d02-f04d-468f-a96f-5b718da701d5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "WiFi enabled",
+              "text": "Connect & cast  in minutes"
+            }
+          },
+          "a9131a34-6786-447f-8d08-e15c137dd861": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "High-res",
+              "text": "1920x1080p resolution"
+            }
+          },
+          "70d20706-3ea8-41a6-a9de-46a345142db0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Bright",
+              "text": "Display during the day or night"
+            }
+          },
+          "3ac0ecc1-dd4e-4f51-9fed-04aa9535ebfe": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Durable",
+              "text": "Hard-wood, mountable frame"
+            }
+          },
+          "8d79a2aa-42d3-4725-bb85-e8edc146b2b0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Limitless",
+              "text": "Use other apps with Google Play"
+            }
+          }
+        },
+        "block_order": [
+          "fb2bf4f9-388b-49fe-adfd-59208d09fd3f",
+          "986f0d02-f04d-468f-a96f-5b718da701d5",
+          "a9131a34-6786-447f-8d08-e15c137dd861",
+          "70d20706-3ea8-41a6-a9de-46a345142db0",
+          "3ac0ecc1-dd4e-4f51-9fed-04aa9535ebfe",
+          "8d79a2aa-42d3-4725-bb85-e8edc146b2b0"
+        ],
+        "settings": {
+          "title": "Main features",
+          "text": "*all Divine devices receive free ongoing software updates"
+        }
+      },
+      "made_sec": {
+        "type": "made_sec",
+        "settings": {
+          "title": "Made for any space",
+          "text": "Displays from 32” to 49” in 3 traditional colors Metal-framed backing makes mounting easy",
+          "image": "shopify:\/\/shop_images\/Screen_Shot_2021-04-25_at_11_c1129fb7-4958-49f4-b3e7-decd4d412d5b.png"
+        }
+      },
+      "image-with-text-pro": {
+        "type": "image-with-text-pro",
+        "blocks": {
+          "92df9ad8-4978-476f-8542-a2e52ef87d07": {
+            "type": "image",
+            "settings": {
+              "title": "Overall size",
+              "text": "781 x 476 x 73mm"
+            }
+          },
+          "8fc40dc5-5206-4783-8349-3473a18902ca": {
+            "type": "image",
+            "settings": {
+              "title": "Brightness",
+              "text": "350cd\/m²"
+            }
+          },
+          "a384460c-00d6-4735-87f9-6d23e78e4176": {
+            "type": "image",
+            "settings": {
+              "title": "Contrast",
+              "text": "2000:1"
+            }
+          },
+          "cb9f17f2-ead2-43b4-a6b2-b4582c8a66a9": {
+            "type": "image",
+            "settings": {
+              "title": "Screen ratio",
+              "text": "16:9"
+            }
+          },
+          "d8811d20-95df-418f-bdc3-1543c39daae2": {
+            "type": "image",
+            "settings": {
+              "title": "Resolution",
+              "text": "1920*1080"
+            }
+          },
+          "0d223cf4-8b15-491c-b606-c883a1e9b0e1": {
+            "type": "image",
+            "settings": {
+              "title": "Refresh rate",
+              "text": "60Hz"
+            }
+          },
+          "456d1d64-9552-4f6f-945e-9c6745911aae": {
+            "type": "image",
+            "settings": {
+              "title": "Weight",
+              "text": "~25 pounds"
+            }
+          },
+          "a3893188-517f-47fa-8947-c77087be1e08": {
+            "type": "image",
+            "settings": {
+              "title": "System OS",
+              "text": "Android 6.0"
+            }
+          }
+        },
+        "block_order": [
+          "92df9ad8-4978-476f-8542-a2e52ef87d07",
+          "8fc40dc5-5206-4783-8349-3473a18902ca",
+          "a384460c-00d6-4735-87f9-6d23e78e4176",
+          "cb9f17f2-ead2-43b4-a6b2-b4582c8a66a9",
+          "d8811d20-95df-418f-bdc3-1543c39daae2",
+          "0d223cf4-8b15-491c-b606-c883a1e9b0e1",
+          "456d1d64-9552-4f6f-945e-9c6745911aae",
+          "a3893188-517f-47fa-8947-c77087be1e08"
+        ],
+        "settings": {
+          "title": "Tech specs",
+          "text": ""
+        }
+      },
+      "faq-product": {
+        "type": "faq-product",
+        "blocks": {
+          "2da5a0c2-41cb-4f78-b0f2-f778d4e52e60": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "Why displays NFTs?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "092f3692-df60-45cc-85d0-ff1233c8cb65": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "How does it work?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "265d4fb2-4fca-425e-a2f4-012ac5cb79d4": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "Question",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "34fa2be4-4aa7-41ae-8a07-2d1e23422273": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "What wallets are compatible?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "8751f272-90a1-428d-9923-0fd835c8bbfb": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "What type of NFTs can I display?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          }
+        },
+        "block_order": [
+          "2da5a0c2-41cb-4f78-b0f2-f778d4e52e60",
+          "092f3692-df60-45cc-85d0-ff1233c8cb65",
+          "265d4fb2-4fca-425e-a2f4-012ac5cb79d4",
+          "34fa2be4-4aa7-41ae-8a07-2d1e23422273",
+          "8751f272-90a1-428d-9923-0fd835c8bbfb"
+        ],
+        "settings": {
+          "show_faqs_1": true,
+          "faqs_1_title": "Frequently asked questions",
+          "faq_text": ""
+        }
+      },
+      "product-gallery": {
+        "type": "product-gallery",
+        "settings": {
+          "image-1": "shopify:\/\/shop_images\/94323_18035126839239540_high.png",
+          "image-1-mob": "shopify:\/\/shop_images\/94323_18035126839239540_high_3558ee70-3d4b-4797-8448-a9447120d50e.png",
+          "image-2": "shopify:\/\/shop_images\/94323_18118057696043744_low.png",
+          "image-2-mob": "shopify:\/\/shop_images\/94323_18118057696043744_high.png",
+          "image-3": "shopify:\/\/shop_images\/94323_18108873652099276_low_1.png",
+          "image-3-mob": "shopify:\/\/shop_images\/94323_18108873652099276_high.png"
+        }
+      },
+      "product-template-accessory": {
+        "type": "product-template-accessory",
+        "settings": {
+          "check_title": "",
+          "check_text": "",
+          "enable_product_reviews": false,
+          "enable_vendor": false,
+          "enable_product_sku": false,
+          "enable_product_availability": false,
+          "enable_short_description": false,
+          "number_words": 22,
+          "type_short_description": "default",
+          "enable_variant_labels": false,
+          "enable_quantity_selector": true,
+          "order_shiping": "Your order will ship in 2-4 weeks",
+          "enable_product_wishlist": false,
+          "enable_payment_button": false,
+          "enable_zoom": false,
+          "enable_fancybox": false,
+          "enable_change_group_image": false,
+          "enable_compare_color": false,
+          "enable_video_product": false,
+          "enable_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "enable_countdown": false,
+          "enable_size_chart": false,
+          "size_chart": "none",
+          "enable_customers_view": false,
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "title_view": "customers are viewing this product",
+          "enable_product_socialShare": false,
+          "worktitle": "",
+          "worktext1": "",
+          "worktext2": "",
+          "worktext3": "",
+          "st_des_tlt": "A powerful projector that fits in your palm",
+          "st_des_txt": "Project your favorite NFTs up to 200” on-the-go or at home with Apollo.  About the size of a soda can, and as light."
+        }
+      },
+      "product-slider": {
+        "type": "product-slider",
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Compatible with",
+          "description": "",
+          "link": "",
+          "collection": "standing-tripod",
+          "collection_layout": "carousel",
+          "column": 2,
+          "limit": 10,
+          "carousel-arrows": false,
+          "carousel-dots": false,
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "product-template-apollo": {
+        "type": "product-template-apollo",
+        "settings": {
+          "check_title": "Bundle it up with accessories",
+          "check_text": "Save 20% with your pre-order",
+          "enable_product_reviews": false,
+          "enable_vendor": false,
+          "enable_product_sku": false,
+          "enable_product_availability": false,
+          "enable_short_description": false,
+          "number_words": 22,
+          "type_short_description": "default",
+          "enable_variant_labels": false,
+          "enable_quantity_selector": true,
+          "order_shiping": "Your order will ship in 2-4 weeks",
+          "enable_product_wishlist": false,
+          "enable_payment_button": false,
+          "enable_zoom": false,
+          "enable_fancybox": false,
+          "enable_change_group_image": false,
+          "enable_compare_color": false,
+          "enable_video_product": false,
+          "enable_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "enable_countdown": false,
+          "enable_size_chart": false,
+          "size_chart": "none",
+          "enable_customers_view": false,
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "title_view": "customers are viewing this product",
+          "enable_product_socialShare": false,
+          "worktitle": "How it works",
+          "workicon1": "shopify:\/\/shop_images\/b_small_d6085396-c0a2-4334-8785-fa35cd561d86.png",
+          "worktext1": "Open Divine app",
+          "workicon2": "shopify:\/\/shop_images\/aaaa_small_4fa4aab4-422e-4abb-b175-b28b5a065c79.png",
+          "worktext2": "Connect wallet",
+          "workicon3": "shopify:\/\/shop_images\/c_small_a8cef3c9-15ba-48bf-aefe-e8f9e9a871cf.png",
+          "worktext3": "Cast your NFT"
+        }
+      },
+      "beauty-framed-apollo": {
+        "type": "beauty-framed-apollo",
+        "settings": {
+          "title": "A powerful projector that fits in your palm",
+          "text": "Project your favorite NFTs up to 200” on-the-go or at home with Apollo.  About the size of a soda can, and as light as an iPhone, Apollo can create a gallery whenever and wherever you want.",
+          "worktitle": "",
+          "worktext1": "",
+          "worktext2": "",
+          "worktext3": ""
+        }
+      },
+      "main-features-apollo": {
+        "type": "main-features-apollo",
+        "blocks": {
+          "b58cc5bc-6147-4101-804e-07b8b83b7362": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Portable",
+              "text": "Small and size and lightweight"
+            }
+          },
+          "cfcbe9e6-cf71-42db-a06c-21c1ecc246c3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "WiFi enabled",
+              "text": "Connect & cast  in minutes"
+            }
+          },
+          "d1e7fab0-c9db-4548-8b80-4c67a94be3ae": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "High-res",
+              "text": "1920x1080p resolution"
+            }
+          },
+          "0340e5cc-9884-4044-abde-729f0233f00f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Big Display",
+              "text": "Project anywhere up to 200”"
+            }
+          },
+          "85181dd8-da13-4d2c-abf8-98ebbd896d0b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Portable",
+              "text": "WiFi enabled"
+            }
+          },
+          "18be52b5-0012-4284-b233-41762c97edbf": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "WiFi enabled",
+              "text": "Connect & cast  in minutes"
+            }
+          },
+          "ab8576ef-eb8e-42c3-a9d8-43b83321ffab": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "High-res",
+              "text": "1920x1080p resolution"
+            }
+          },
+          "060250f3-c9aa-4863-9562-980e1ecfc761": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imggg.png",
+              "title": "Big Display",
+              "text": "Project anywhere up to 200”"
+            }
+          }
+        },
+        "block_order": [
+          "b58cc5bc-6147-4101-804e-07b8b83b7362",
+          "cfcbe9e6-cf71-42db-a06c-21c1ecc246c3",
+          "d1e7fab0-c9db-4548-8b80-4c67a94be3ae",
+          "0340e5cc-9884-4044-abde-729f0233f00f",
+          "85181dd8-da13-4d2c-abf8-98ebbd896d0b",
+          "18be52b5-0012-4284-b233-41762c97edbf",
+          "ab8576ef-eb8e-42c3-a9d8-43b83321ffab",
+          "060250f3-c9aa-4863-9562-980e1ecfc761"
+        ],
+        "settings": {
+          "title": "Main features",
+          "text": "*all Divine devices receive free ongoing software updates"
+        }
+      },
+      "image-with-text-apollo": {
+        "type": "image-with-text-apollo",
+        "blocks": {
+          "8ceafaa4-ccc3-40ac-b975-9624e8a88254": {
+            "type": "image",
+            "settings": {
+              "title": "Brightness",
+              "text": "350cd\/m²"
+            }
+          },
+          "a99a3aea-a5b2-46ff-b630-c8f7872fb122": {
+            "type": "image",
+            "settings": {
+              "title": "Contrast",
+              "text": "Screen ratio"
+            }
+          },
+          "c13e0260-004d-4c3c-9533-cf102bf456cd": {
+            "type": "image",
+            "settings": {
+              "title": "Refresh rate",
+              "text": "Weight"
+            }
+          },
+          "9527b42e-44cc-4523-bc28-c27f671f129d": {
+            "type": "image",
+            "settings": {
+              "title": "System OS",
+              "text": "781 x 476 x 73mm"
+            }
+          },
+          "dc1f099e-a62a-40d1-ba56-04e944da9ebb": {
+            "type": "image",
+            "settings": {
+              "title": "Overall size",
+              "text": "Resolution"
+            }
+          },
+          "3a9496b6-114c-440e-81d0-beba08afe4e8": {
+            "type": "image",
+            "settings": {
+              "title": "Resolution",
+              "text": "1920*1080"
+            }
+          },
+          "c4085dee-2456-42eb-b6e5-278e818e867b": {
+            "type": "image",
+            "settings": {
+              "title": "Text goes here",
+              "text": "Text goes here"
+            }
+          },
+          "f3f73415-d489-4d67-b692-d48a88554ce6": {
+            "type": "image",
+            "settings": {
+              "title": "Text goes here",
+              "text": "Text goes here"
+            }
+          }
+        },
+        "block_order": [
+          "8ceafaa4-ccc3-40ac-b975-9624e8a88254",
+          "a99a3aea-a5b2-46ff-b630-c8f7872fb122",
+          "c13e0260-004d-4c3c-9533-cf102bf456cd",
+          "9527b42e-44cc-4523-bc28-c27f671f129d",
+          "dc1f099e-a62a-40d1-ba56-04e944da9ebb",
+          "3a9496b6-114c-440e-81d0-beba08afe4e8",
+          "c4085dee-2456-42eb-b6e5-278e818e867b",
+          "f3f73415-d489-4d67-b692-d48a88554ce6"
+        ],
+        "settings": {
+          "title": "Tech specs",
+          "text": "",
+          "fe_image": "shopify:\/\/shop_images\/Product-Page---Desktop.png"
+        }
+      },
+      "what-box": {
+        "type": "what-box",
+        "blocks": {
+          "3e908de5-c26e-4d42-87d5-bb64f02fdb1f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/headphone.png",
+              "title": "1x Projector"
+            }
+          },
+          "c2c4220f-4dbf-43b1-b983-ffab696c34ed": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/headphone.png",
+              "title": "1x Remote"
+            }
+          },
+          "4c1e6b4e-53ec-4753-9063-b5f92dfc0f24": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/headphone.png",
+              "title": "1x power supply"
+            }
+          },
+          "e71883bd-ca34-45a5-a4e4-02684d347370": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/headphone.png",
+              "title": "1x HDMI"
+            }
+          },
+          "5e24ce89-4233-42d3-ab1f-494574fdbae6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/headphone.png",
+              "title": "Text goes here"
+            }
+          }
+        },
+        "block_order": [
+          "3e908de5-c26e-4d42-87d5-bb64f02fdb1f",
+          "c2c4220f-4dbf-43b1-b983-ffab696c34ed",
+          "4c1e6b4e-53ec-4753-9063-b5f92dfc0f24",
+          "e71883bd-ca34-45a5-a4e4-02684d347370",
+          "5e24ce89-4233-42d3-ab1f-494574fdbae6"
+        ],
+        "settings": {
+          "title": "What’s in the box",
+          "text": ""
+        }
+      },
+      "product-collection": {
+        "type": "product-collection",
+        "blocks": {
+          "d5d6af35-8341-4b5e-90af-8a6e98e4c2d6": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "traveling-case",
+              "btn_txt": "Learn more"
+            }
+          },
+          "fa956159-e00e-4943-8f9b-78ac51fa5a1b": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "standing-tripod",
+              "btn_txt": "Learn more"
+            }
+          }
+        },
+        "block_order": [
+          "d5d6af35-8341-4b5e-90af-8a6e98e4c2d6",
+          "fa956159-e00e-4943-8f9b-78ac51fa5a1b"
+        ],
+        "settings": {
+          "title": "Compatible accessories"
+        }
+      },
+      "zeus-faq": {
+        "type": "zeus-faq",
+        "blocks": {
+          "ffbafd6d-dbbb-48f6-b1ce-0f7f3826155f": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "What’s the difference?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "513468b6-d218-4b88-ab44-681c19b6970e": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "How does it work?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "9c1f39e6-d360-4294-be84-dd54d22f3523": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "What wallets are compatible?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          },
+          "a5b1ffb2-f731-4820-9ce4-d3843291a35a": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "What type of NFTs can I display?",
+              "answer_faqs": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.<\/p>",
+              "faq_type": "1"
+            }
+          }
+        },
+        "block_order": [
+          "ffbafd6d-dbbb-48f6-b1ce-0f7f3826155f",
+          "513468b6-d218-4b88-ab44-681c19b6970e",
+          "9c1f39e6-d360-4294-be84-dd54d22f3523",
+          "a5b1ffb2-f731-4820-9ce4-d3843291a35a"
+        ],
+        "settings": {
+          "show_faqs_1": true,
+          "faqs_1_title": "Frequently asked questions",
+          "faq_text": ""
+        }
+      },
+      "zeus-pro-collection": {
+        "type": "zeus-pro-collection",
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 0,
+          "bottom": 0,
+          "title": "Compatible mounts",
+          "description": "",
+          "link": "",
+          "collection": "standing-tripod",
+          "collection_layout": "carousel",
+          "column": 3,
+          "limit": 6,
+          "carousel-arrows": false,
+          "carousel-dots": false,
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "how-it-work-collection": {
+        "type": "how-it-work-collection",
+        "settings": {
+          "background-color": false,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 30,
+          "title": "Available accessories",
+          "description": "",
+          "link": "",
+          "collection": "frontpage",
+          "collection_layout": "grid",
+          "column": 3,
+          "limit": 20,
+          "carousel-arrows": false,
+          "carousel-dots": false,
+          "custom_color": false,
+          "color_heading": "",
+          "color_text": "",
+          "color_btn_text": "",
+          "color_btn_border": "",
+          "color_btn_bg": ""
+        }
+      },
+      "collection-banner-section": {
+        "type": "collection-banner-section",
+        "settings": {}
+      },
+      "1601276344725": {
+        "type": "home-how-it-works",
+        "disabled": true,
+        "blocks": {
+          "1601276344725-1": {
+            "type": "item",
+            "settings": {
+              "title": "Pair Your Wallet to Device",
+              "description": "Scan QR code or use browser to authenticate your wallet & pair your Divine device",
+              "image": "shopify:\/\/shop_images\/b.png",
+              "cta_label": "",
+              "cta_link": ""
+            }
+          },
+          "1601276344725-2": {
+            "type": "item",
+            "settings": {
+              "title": "Browse, Cast and Experience",
+              "description": "Use our web interface to choose which NFT to display to specific hardware device",
+              "image": "shopify:\/\/shop_images\/aaaa.png",
+              "cta_label": "",
+              "cta_link": ""
+            }
+          },
+          "1601276344725-0": {
+            "type": "item",
+            "settings": {
+              "title": "Auto-Sync New Features & Updates",
+              "description": "We are constantly pushing live features as the NFT landscape rapidly evolves",
+              "image": "shopify:\/\/shop_images\/c.png",
+              "cta_label": "",
+              "cta_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1601276344725-1",
+          "1601276344725-2",
+          "1601276344725-0"
+        ],
+        "settings": {
+          "background-color": "#e9e9e9",
+          "enable_layout": true,
+          "border-top": false,
+          "border-bottom": false,
+          "top": 30,
+          "bottom": 40,
+          "title": "How it works",
+          "description": ""
+        }
+      },
+      "1618026053afd7046a": {
+        "type": "hero",
+        "disabled": true,
+        "blocks": {
+          "ac4509b4-2cdd-417b-b7df-99230f4a9795": {
+            "type": "product_item",
+            "settings": {
+              "product": "",
+              "coordinates_x": 50,
+              "coordinates_y": 50
+            }
+          }
+        },
+        "block_order": [
+          "ac4509b4-2cdd-417b-b7df-99230f4a9795"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Image5_copy.jpg",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "overlay": "dark",
+          "content_layout": "middle",
+          "text_size": "medium",
+          "sub_title": "",
+          "title": "Want To Collab?",
+          "countdown": "",
+          "text": "<p>We love working with artists and startups for rare collaborations and drops.<\/p>",
+          "button": "Contact Us",
+          "button_link": "shopify:\/\/collections\/all",
+          "custom_color": true,
+          "color_subheading": "",
+          "color_heading": "#f2b957",
+          "color_text": "#eff1f0",
+          "color_button": "",
+          "border_button": "",
+          "bg_button": ""
+        }
+      },
+      "collection-table-mobile": {
+        "type": "collection-table-mobile",
+        "blocks": {
+          "62bb7a9f-fce5-4302-9d17-6c2a92220e13": {
+            "type": "mobile_table",
+            "settings": {
+              "mob_image_1": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_88b444a2-bba8-47fb-8e42-f259c772c4b6.jpg",
+              "pro_name1": "Apollo",
+              "mob_image_2": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_2_753a0333-cdfc-4a00-b4bd-06d701467459.jpg",
+              "pro_name2": "Zeus",
+              "pro_size": "Overall Size",
+              "pro_size_1": "Test goes here",
+              "pro_size_2": "Test goes here",
+              "pro_max": "Max Display",
+              "pro_max_1": "Test goes here",
+              "pro_max_2": "Test goes here",
+              "pro_resol": "Resolution",
+              "pro_resol_1": "Test goes here",
+              "pro_resol_2": "Test goes here",
+              "pro_weight": "Weight",
+              "pro_weight_1": "Test goes here",
+              "pro_weight_2": "Test goes here",
+              "pro_wifi": "WiFi Enabled",
+              "pro_wifi_1": "Test goes here",
+              "pro_wifi_2": "Test goes here",
+              "pro_sound": "Sound",
+              "pro_sound_1": "Test goes here",
+              "pro_sound_2": "Test goes here",
+              "pro_feature": "Main Feature",
+              "pro_feature_1": "Test goes here",
+              "pro_feature_2": "Test goes here",
+              "btn_txt": "Learn more",
+              "btn_lk": "",
+              "btn_txt2": "Learn more",
+              "btn_lk2": ""
+            }
+          },
+          "b1ce431a-7f48-40f8-95f9-97e4d62ed97b": {
+            "type": "mobile_table",
+            "settings": {
+              "mob_image_1": "shopify:\/\/shop_images\/mock_up2_1.png",
+              "pro_name1": "Vulcan",
+              "mob_image_2": "shopify:\/\/shop_images\/mock_up2_d4202724-d606-4a59-887e-03b0e6b514f0.png",
+              "pro_name2": "Vulcan 2",
+              "pro_size": "Overall Size",
+              "pro_size_1": "Test goes here",
+              "pro_size_2": "Test goes here",
+              "pro_max": "Max Display",
+              "pro_max_1": "Test goes here",
+              "pro_max_2": "Test goes here",
+              "pro_resol": "Resolution",
+              "pro_resol_1": "Test goes here",
+              "pro_resol_2": "Test goes here",
+              "pro_weight": "Weight",
+              "pro_weight_1": "Test goes here",
+              "pro_weight_2": "Test goes here",
+              "pro_wifi": "WiFi Enabled",
+              "pro_wifi_1": "Test goes here",
+              "pro_wifi_2": "Test goes here",
+              "pro_sound": "Sound",
+              "pro_sound_1": "Test goes here",
+              "pro_sound_2": "Test goes here",
+              "pro_feature": "Main Feature",
+              "pro_feature_1": "Test goes here",
+              "pro_feature_2": "Test goes here",
+              "btn_txt": "Learn more",
+              "btn_lk": "",
+              "btn_txt2": "Learn more",
+              "btn_lk2": ""
+            }
+          }
+        },
+        "block_order": [
+          "62bb7a9f-fce5-4302-9d17-6c2a92220e13",
+          "b1ce431a-7f48-40f8-95f9-97e4d62ed97b"
+        ],
+        "settings": {
+          "heading": "Which Device Is Right For You?",
+          "html": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1619203728ed35ec85",
+      "16180201742f2be3a3",
+      "16192073825884a956",
+      "1619212773c66236b3",
+      "1600814841152",
+      "1601276344725",
+      "1618026053afd7046a",
+      "1618773688891dfe44"
+    ]
+  }
+}

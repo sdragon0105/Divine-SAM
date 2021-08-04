@@ -1,0 +1,144 @@
+{% if section.settings.background-color %}
+    {% assign background_color = 'halo-section-background-gray' %}
+{% endif %}
+
+{% assign top = top | default: section.settings.top %}
+{% assign bottom = bottom | default: section.settings.bottom %}
+
+{% if section.settings.custom_color %}
+<style>
+  [data-section-id='{{ section.id }}'] .section-header .title {
+    color: {{ section.settings.color_heading }};
+  }
+
+  [data-section-id='{{ section.id }}'] .section-header > p {
+    color: {{ section.settings.color_text }};
+  }
+</style>
+{% endif %}
+
+<div class="halo-section choose-your-art-section padding-top-{{ top }} padding-bottom-{{ bottom }} {{ background_color }} {{ border_top }} {{ border_bottom }}" data-section-id="{{ section.id }}" data-section-type="image-with-text-1">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        {% if section.settings.description != blank %}
+          <p>{{ section.settings.description }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="choose-your-art-items">
+      <div class="choose-your-art-inner">
+        {% for block in section.blocks %}
+          <div class="choose-your-art-loop">
+            <div class="choose-your-art-image">
+              <img data-src="{{ block.settings.image | img_url: '280x' }}" class="lazyload">
+            </div>
+            <div class="choose-your-art-actions">
+              {%- if block.settings.button != blank and block.settings.button_link != blank -%}
+              <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button }}</a>
+              {%- endif -%}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Choose your art template",
+  "settings": [
+  	{
+      "type": "header",
+      "content": "Section Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "background-color",
+      "label": "Background Color Custom",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "top",
+      "label": "Spacing Top",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "bottom",
+      "label": "Spacing bottom",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Heading Section"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Custom Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_color",
+      "label": "Turn on custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Heading Color"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Description Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

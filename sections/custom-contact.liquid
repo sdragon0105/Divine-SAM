@@ -1,0 +1,93 @@
+<div id="{{section.id}}" class="shopify-section">
+    <div class="page-width">
+<div class="custom-contact-section">
+   <h1>{{section.settings.heading}}</h1> 
+    <p>{{section.settings.content}}</p>
+  </div>
+      
+          <div class=" justify-content-between-custom">
+            <div class="col-12 col-sm-12 col-lg-6 mb-5">
+                <div class="form-vertical-custom">
+                  
+
+                    {%- assign formId = 'ContactForm' -%}
+                    {% form 'contact', id: formId %}
+                        {% render 'form-status', form_id: formId, form: form %}
+
+<!--                         <label for="{{ formId }}-name" class="form-label">{{ 'contact.form.name' | t }}</label> -->
+                        <input type="text" placeholder="your name" id="{{ formId }}-name" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" class="form-control">
+       <input
+                            type="email"
+                            id="{{ formId }}-email" class="form-control"
+                               placeholder="your email"
+                            name="contact[email]"
+                            autocapitalize="off"
+                            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                            aria-required="true"
+                            {%- if form.errors contains 'email' -%}
+                                class="input--error"
+                                aria-invalid="true"
+                                aria-describedby="{{ formId }}-email-error"
+                            {%- endif -%}
+                            >
+                        {%- if form.errors contains 'email' -%}
+                            <span id="{{ formId}}-email-error" class="input-error-message"><svg class="icon"><use xlink:href="#icon-error" /></svg> {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                        {%- endif -%}
+<!--                         <label for="{{ formId }}-phone" class="form-label">{{ 'contact.form.phone' | t }}</label>
+                        <input type="tel" id="{{ formId }}-phone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" class="form-control">
+ -->
+       <input type="text" id="{{ formId }}-subject" name="contact[subject]" placeholder="subject" />            
+                  
+<select id="{{ formId }}-reason" name="contact[reason]" >
+  <option>contact reason</option>
+  <option>Vanilla</option>
+  <option>Strawberry</option>
+</select>
+                  
+                  
+                  
+<!--                         <label for="{{ formId }}-email" class="form-label">{{ 'contact.form.email' | t }} <em>*</em></label> -->
+                  
+                  
+                 
+               
+                 
+
+<!--                         <label for="{{ formId }}-message" class="form-label">{{ 'contact.form.message' | t }} <em>*</em></label> -->
+                        <textarea rows="4" placeholder="enter message" id="{{ formId }}-message" name="contact[body]" class="form-control">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+                        <input type="submit" class="btn btn--primary btn--large mt-3" value="Submit">
+
+                      <span>Expect response in 24-28 hrs</span> 
+                    {% endform %}
+                </div>
+            </div>
+            
+       
+        </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "custom-contact",
+"settings": [
+{
+"type":"text",
+"id":"heading",
+"label":"Heading"
+},
+{
+"type":"html",
+"id":"content",
+"label":"Heading"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

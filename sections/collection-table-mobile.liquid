@@ -1,0 +1,316 @@
+
+  
+  <div class="mobile_table">
+    <h1>{{section.settings.heading}}</h1>
+  <div class="slider_table">
+  {% for block in section.blocks %}
+    <div class="custom-table-content">
+      <div class="col_row">
+        <div class="col_cum">
+          <img class="pro_igm" src="{{block.settings.mob_image_1 |img_url:'master'}}">
+          <h3>{{ block.settings.pro_name1 }}</h3>
+        </div>
+        <div class="col_cum">
+          <img class="pro_igm" src="{{block.settings.mob_image_2 |img_url:'master'}}">
+          <h3>{{ block.settings.pro_name2 }}</h3>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{block.settings.pro_size }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_size_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_size_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{block.settings.pro_max }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_max_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_max_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_resol }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_resol_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_resol_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_resol }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_resol_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_resol_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_weight }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_weight_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_weight_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_wifi }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_wifi_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_wifi_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_sound }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_sound_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_sound_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum_100">
+          <h4>{{ block.settings.pro_feature }}</h4>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <p>{{block.settings.pro_feature_1 }}</p>
+        </div>
+        <div class="col_cum">
+          <p>{{block.settings.pro_feature_2 }}</p>
+        </div>
+      </div>
+      <div class="col_row">
+        <div class="col_cum">
+          <a href="{{block.settings.btn_lk }}">{{block.settings.btn_txt }}</a>
+        </div>
+        <div class="col_cum">
+          <a href="{{block.settings.btn_lk2 }}">{{block.settings.btn_txt2 }}</a>
+        </div>
+      </div>
+      
+    </div>
+    {%endfor%}
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "collection table Mobile",
+    "class":"abc",
+    "settings": [
+{
+"type":"text",
+"id":"heading",
+"label":"Heading"
+},
+{
+"type":"html",
+"id":"html",
+"label":"Content"
+}
+],
+"blocks": [
+			{
+              "type": "mobile_table",
+              "name": "Mobile",
+              "settings": [
+							{
+                            "type":"image_picker",
+                            "id":"mob_image_1",
+                            "label":"Mobile Image"
+                          },
+						  {
+                            "id": "pro_name1",
+                            "type": "text",
+                            "label": "Product Name"
+                          },
+						  {
+                            "type":"image_picker",
+                            "id":"mob_image_2",
+                            "label":"Mobile Image"
+                          },
+						  {
+                            "id": "pro_name2",
+                            "type": "text",
+                            "label": "Product Name"
+                          },
+						  {
+                            "id": "pro_size",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_size_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_size_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_max",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_max_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_max_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_resol",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_resol_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_resol_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_weight",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_weight_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_weight_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_wifi",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_wifi_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_wifi_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_sound",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_sound_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_sound_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "pro_feature",
+                            "type": "text",
+                            "label": "Overall Size Heading"
+                          },
+						  {
+                            "id": "pro_feature_1",
+                            "type": "text",
+                            "label": "Overall Size Product 1"
+                          },
+						  {
+                            "id": "pro_feature_2",
+                            "type": "text",
+                            "label": "Overall Size Product 2"
+                          },
+						  {
+                            "id": "btn_txt",
+                            "type": "text",
+                            "label": "Button First Text"
+                          },
+						  {
+                            "id": "btn_lk",
+                            "type": "url",
+                            "label": "Button First Link"
+                          },
+						  {
+                            "id": "btn_txt2",
+                            "type": "text",
+                            "label": "Button Second Text"
+                          },
+						  {
+                            "id": "btn_lk2",
+                            "type": "url",
+                            "label": "Button Second Link"
+                          }
+				]
+			}
+]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

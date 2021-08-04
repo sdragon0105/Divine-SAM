@@ -1,0 +1,101 @@
+{% if section.settings.background-color %}
+  {% assign background_color = 'halo-section-background-gray' %}
+{% endif %}
+
+{% assign top = top | default: section.settings.top %}
+{% assign bottom = bottom | default: section.settings.bottom %}
+
+<div class="halo-section padding-top-{{ top }} padding-bottom-{{ bottom }} {{ background_color }}" data-section-id="{{ section.id }}" data-section-type="backgrounds-header">
+  <div class="container">
+    <div class="bh-image-with-text">
+      <div class="bh-image-with-text__image">
+        {% assign img_url = section.settings.image | img_url: 'master' %}
+        {% assign img_url_2 = section.settings.image | img_url: '340x' %}
+        {% if section.settings.image != blank %}
+          <img class="lazyload"
+            data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 768w"
+            data-sizes="auto" alt="" data-image>
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      <div class="bh-image-with-text__content">
+        <div class="section-header">
+          {% if section.settings.title != blank %}
+            <h2 class="title">{{ section.settings.title | newline_to_br }}</h2>
+          {% endif %}
+          {% if section.settings.button != blank %}
+            <a href="{{ section.settings.button_link }}" class="btn btn--primary" aria-label="link">{{ section.settings.button }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Backgrounds header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "background-color",
+      "label": "Background Color Custom",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "top",
+      "label": "Spacing Top",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "bottom",
+      "label": "Spacing bottom",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Image Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Heading Section"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Image With Text"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+{% if settings.breadcrumb_layout == 'top' %}
+    {% render 'breadcrumb', breadcrumb_top: true %}
+{% endif %}
+{%section 'custom-how-it-banner' %}
+{%section 'custom-how-it-block' %}
+
+{%section 'custom-how-html' %}
+{%section 'custom-image-with-text' %}
+
+{%section 'how-it-work-product' %}
+
+
+{%section 'how-made-banner' %}
+
+
+{% if settings.breadcrumb_layout == 'bottom' %}
+    {% render 'breadcrumb' %}
+{% endif %}
+
+{% if page.handle == 'how-it-work' %}
+<style>
+div#shopify-section-how-it-work-product h2.title {
+    font-size: 28px;
+    color: #818181;
+    text-align: center;
+    margin: 0;
+    font-family: Nexa-Book;
+}
+div#shopify-section-how-it-work-product p {
+  font-size: 28px;
+    color: #33322e;
+    font-weight: 700;
+    font-family: Nexa;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: auto;
+    line-height: 34px
+  }
+  .section-header {margin-bottom:0px;}
+</style>
+{% endif %}

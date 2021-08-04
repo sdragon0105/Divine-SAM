@@ -1,0 +1,64 @@
+<div id="{{section.id}}" class="shopify-section">
+  <div class="container">
+  <div class="product-zeus-bg">
+  <h1>{{section.settings.title}}</h1>
+  
+    
+    <div class="zeus-image-button">    
+ {% for block in section.blocks %}
+  <div class="zeus-box-block-content">
+ <img src="{{block.settings.image |img_url:''}}">
+    <p>{{block.settings.content}}</p>
+     <a href="{{block.settings.url}}">{{block.settings.btn-title}}</a>
+  </div>{%endfor%}
+    </div>
+    </div> 
+</div>
+</div>
+{% schema %}
+{
+ "name": "image button",
+ "settings": [
+{
+"type":"text",
+"id":"title",
+"label":"Heading"
+}
+],
+"blocks": [
+{
+"type": "images-button",
+"name": "blocks",
+"settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+},
+{
+"type":"text",
+"id":"btn-title",
+"label":"button title"
+},
+{
+"type":"url",
+"id":"url",
+"label":"button link"
+}
+
+]
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

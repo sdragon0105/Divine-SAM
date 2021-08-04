@@ -1,0 +1,175 @@
+{% if section.settings.hero_size == 'large' %}
+    {% assign img_url = section.settings.image | img_url: '1920x970' %}
+{% elsif section.settings.hero_size == 'medium' %}
+    {% assign img_url = section.settings.image | img_url: '1920x770' %}
+{% elsif section.settings.hero_size == 'small' %}
+    {% assign img_url = section.settings.image | img_url: '1920x600' %}
+{% endif %}
+
+{% assign top = top | default: section.settings.top %}
+{% assign bottom = bottom | default: section.settings.bottom %}
+
+
+<div class="halo-section padding-top-{{ top }} padding-bottom-{{ bottom }} {{ background_color }} {{ border_top }} {{ border_bottom }}" data-section-id="{{ section.id }}" data-section-type="hero-image-with-text">
+    <div class="hero-image-with-text{% if section.settings.layout == 'right' %} hero-image-with-text--right{% endif %}">
+        <div class="hero-image-with-text__content text-center">
+            <div class="section-header">
+                {% if section.settings.subtitle != blank %}
+                    <h5 class="subtitle">{{ section.settings.subtitle }}</h5>
+                {% endif %}
+                {% if section.settings.title != blank %}
+                    <h2 class="title">{{ section.settings.title }}</h2>
+                {% endif %}
+                {% if section.settings.description != blank %}
+                    <p>{{ section.settings.description }}</p>
+                {% endif %}
+                {% if section.settings.button != blank %}
+                    <a href="{{ section.settings.button_link }}" class="btn btn--primary" aria-label="link">
+                        {{ section.settings.button }}
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="hero-image-with-text__image {% if section.settings.image_mobile != blank %} hero-image-with-text__image--mobile{% endif %}">
+            {% if section.settings.image_mobile != blank %}
+                <img class="mobile-image lazyload" data-srcset="{{ section.settings.image_mobile | img_url: 'master' }}" alt="" data-image>
+            {% endif %}
+            {% if section.settings.image == blank %}
+                <div class="placeholder-background">
+                    {% if section.settings.hero_size == 'large' %}
+                        <span class="recommended_size">1920x970</span>
+                    {% elsif section.settings.hero_size == 'medium' %}
+                        <span class="recommended_size">1920x770</span>
+                    {% elsif section.settings.hero_size == 'small' %}
+                        <span class="recommended_size">1920x500</span>
+                    {% endif %}
+                    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+            {% else %}
+                <img class="desktop-image lazyload" data-srcset="{{ img_url }}" alt="" data-image>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Hero Image With Text",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section Layout"
+        },
+        {
+            "type": "range",
+            "id": "top",
+            "label": "Spacing Top",
+            "default": 30,
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "bottom",
+            "label": "Spacing bottom",
+            "default": 30,
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "px"
+        },
+        {
+            "type": "header",
+            "content": "Layout"
+        },
+        {
+            "type": "select",
+            "id": "layout",
+            "label": "Layout",
+            "default": "left",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Image Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Image Right"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Banner Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Mobile Image"
+        },
+        {
+            "type": "select",
+            "id": "hero_size",
+            "label": "Section height",
+            "default": "medium",
+            "options": [
+                {
+                    "label": "Small",
+                    "value": "small"
+                },
+                {
+                    "label": "Medium",
+                    "value": "medium"
+                },
+                {
+                    "label": "Large",
+                    "value": "large"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Content"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "SubTitle"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Image With Text"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+        },
+        {
+            "type": "text",
+            "id": "button",
+            "label": "Button"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero Image With Text",
+            "category": "Images"
+        }
+    ]
+}
+{% endschema %}

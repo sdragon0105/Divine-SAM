@@ -1,0 +1,525 @@
+{% assign pagename = request.page_type | handle %}
+
+<div data-section-id="{{ section.id }}" data-section-type="header">
+    {% if section.settings.message %}
+        {% if section.settings.home_page_only == false or request.page_type == 'index' %}
+            <div class="announcement-bar text-center">
+                <div class="announcement-bar__message">{{ section.settings.message_text }}</div>
+            </div>
+        {% endif %}
+    {% endif %}
+    <header id="myHeader" class="{{ template }} site-header {% if settings.enable_header_effect %}{% endif %}">
+        {% render 'header-pc', pagename: pagename %}
+        {% render 'header-mobile', pagename: pagename %}
+    </header>
+</div>
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {% if settings.logo %}
+        {% assign image_size = settings.logo.width | append:'x' %}
+        "logo": {{ settings.logo | img_url: image_size | prepend: "https:" | json }},
+    {% endif %}
+    "sameAs": [
+        {{ settings.social_twitter_link | json }},
+        {{ settings.social_facebook_link | json }},
+        {{ settings.social_pinterest_link | json }},
+        {{ settings.social_instagram_link | json }},
+        {{ settings.social_tumblr_link | json }},
+        {{ settings.social_snapchat_link | json }},
+        {{ settings.social_youtube_link | json }},
+        {{ settings.social_vimeo_link | json }}
+    ],
+    "url": {{ shop.url | append: page.url | json }}
+}
+</script>
+
+{% if request.page_type == 'index' %}
+    {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": {{ shop.name | json }},
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {{ potential_action_target | json }},
+                "query-input": "required name=search_term_string"
+            },
+            "url": {{ shop.url | append: page.url | json }}
+        }
+  </script>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("header-sticky");
+  } else {
+    header.classList.remove("header-sticky");
+  }
+}
+</script>
+
+{% endif %}
+
+{% schema %}
+{
+    "name": "Header",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Announcement bar"
+        },
+        {
+            "type": "checkbox",
+            "id": "message",
+            "label": "Show announcement",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "home_page_only",
+            "label": "Home page only",
+            "default": false
+        },
+        {
+            "type": "html",
+            "id": "message_text",
+            "label": "Text"
+        },
+        {
+            "type": "header",
+            "content": "Header Account"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable-header-account",
+            "label": "Enable Header Account",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "header-account-position",
+            "label": "Position show",
+            "default": "right",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Header Search"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable-header-search",
+            "label": "Enable Header Search",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "header-search-position",
+            "label": "Position show",
+            "default": "right",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Header Wishlist"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable-header-wishlist",
+            "label": "Enable Header wishlist",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "header-wishlist-position",
+            "label": "Position show",
+            "default": "right",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Header Cart"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable-header-cart",
+            "label": "Enable Header Cart",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "header-cart-position",
+            "label": "Position show",
+            "default": "right",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Header Navigation"
+        },
+
+{
+"type":"text",
+"id":"btn",
+"label":"Reverse Now"
+},
+{
+"type":"url",
+"id":"btn_link",
+"label":"Button reverse"
+
+},
+
+
+      {
+            "type": "link_list",
+            "id": "main_linklist",
+            "label": "Menu",
+            "default": "main-menu"
+        },
+        {
+            "type": "header",
+            "content": "Header Navigation Label"
+        },
+        {
+            "type"  : "text",
+            "id"    : "label_1",
+            "label" : "Name Label"
+        },
+        {
+            "type"  : "textarea",
+            "id"    : "label_1_collection",
+            "label" : "Collection show label",
+            "info"  : "=============="
+        },
+        {
+            "type"  : "text",
+            "id"    : "label_2",
+            "label" : "Name Label"
+        },
+        {
+            "type"  : "textarea",
+            "id"    : "label_2_collection",
+            "label" : "Collection show label",
+            "info"  : "=============="
+        },
+        {
+            "type"  : "text",
+            "id"    : "label_3",
+            "label" : "Name Label"
+        },
+        {
+            "type"  : "textarea",
+            "id"    : "label_3_collection",
+            "label" : "Collection show label"
+        },
+        {
+            "type": "header",
+            "content": "Header Navigation Dropdown"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_megamenu",
+            "label": "Enable Dropdown MegaMenu?",
+            "default": false
+        },
+        {
+            "type":"text",
+            "id":"btn1",
+            "label":"Button one"
+        },
+        {
+            "type":"url",
+            "id":"url1",
+            "label":"Button link"
+        },
+        {
+            "type":"text",
+            "id":"btn2",
+            "label":"Button one"
+        },
+        {
+            "type":"url",
+            "id":"url2",
+            "label":"Button link"
+        }
+
+
+    ],
+    "blocks": [
+
+        {
+            "type": "style_1",
+            "name": "Mega menu layout 1",
+            "settings": [
+                {
+                    "type" : "header",
+                    "content" : "Collection"
+                },
+                {
+                    "type": "text",
+                    "id": "megamenu_items_1",
+                    "label": "Collection name for layout",
+                    "default": "Catalog"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Product"
+                },
+                {
+                    "type": "text",
+                    "id": "title_featured_product_1",
+                    "label": "Title Product",
+                    "default" : "Featured Products"
+                },
+                {
+                    "type": "product",
+                    "id": "featured_product_1_1",
+                    "label": "Product"
+                },
+                {
+                    "type": "product",
+                    "id": "featured_product_1_2",
+                    "label": "Product"
+                },
+                {
+                    "type": "product",
+                    "id": "featured_product_1_3",
+                    "label": "Product"
+                },
+                {
+                    "type": "product",
+                    "id": "featured_product_1_4",
+                    "label": "Product"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Banner Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_1_1",
+                    "label": "Upload Banner"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_1_1",
+                    "label": "Link For Banner"
+                }
+            ]
+        },
+        {
+            "type": "style_2",
+            "name": "Mega menu layout 2",
+            "settings": [
+                {
+                    "type" : "header",
+                    "content" : "Collection"
+                },
+                {
+                    "type": "text",
+                    "id": "megamenu_items_2",
+                    "label": "Collection name for layout",
+                    "default": "Catalog"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Banner Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_2_1",
+                    "label": "Upload Banner"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_2_1",
+                    "label": "Link For Banner"
+                }
+            ]
+        },
+        {
+            "type": "style_3",
+            "name": "Mega menu layout 3",
+            "settings": [
+                {
+                    "type" : "header",
+                    "content" : "Collection"
+                },
+                {
+                    "type": "text",
+                    "id": "megamenu_items_3",
+                    "label": "Collection name for layout",
+                    "default": "Catalog"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Banner Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_3_1",
+                    "label": "Upload Banner"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_3_1",
+                    "label": "Link For Banner"
+                }
+            ]
+        },
+        {
+            "type": "style_4",
+            "name": "Mega menu layout 4",
+            "settings": [
+                {
+                    "type" : "header",
+                    "content" : "Collection"
+                },
+                {
+                    "type": "text",
+                    "id": "megamenu_items_4",
+                    "label": "Collection name for layout",
+                    "default": "Catalog"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Banner Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_4_1",
+                    "label": "Upload Banner 1"
+                },
+                {
+                    "type": "text",
+                    "id": "title_banner_image_4_1",
+                    "label": "Title For Banner 1"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_4_1",
+                    "label": "Link For Banner 1"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_4_2",
+                    "label": "Upload Banner 2"
+                },
+                {
+                    "type": "text",
+                    "id": "title_banner_image_4_2",
+                    "label": "Title For Banner 2"
+                },
+				{
+                    "type": "text",
+                    "id": "title_banner_image_4_2_2",
+                    "label": "Second Title For Banner 2"
+                },
+				{
+                    "type": "text",
+                    "id": "title_banner_image_4_2_3",
+                    "label": "Third Title For Banner 2"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_4_2",
+                    "label": "Link For Banner 2"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_4_3",
+                    "label": "Upload Banner 3"
+                },
+                {
+                    "type": "text",
+                    "id": "title_banner_image_4_3",
+                    "label": "Title For Banner 3"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_4_3",
+                    "label": "Link For Banner 3"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "banner_image_4_4",
+                    "label": "Upload Banner 4"
+                },
+                {
+                    "type": "text",
+                    "id": "title_banner_image_4_4",
+                    "label": "Title For Banner 4"
+                },
+                {
+                    "type": "url",
+                    "id": "link_banner_image_4_4",
+                    "label": "Link For Banner 4"
+                },
+                {
+                    "type" : "header",
+                    "content" : "Breadcrumb menu"
+                },
+                {
+                    "type": "text",
+                    "id": "text_breadcrumb_4",
+                    "label": "Text For Breadcrumb menu",
+                    "default": "More offers"
+                },
+                {
+                    "type": "url",
+                    "id": "link_breadcrumb_4",
+                    "label": "Link For Breadcrumb menu"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

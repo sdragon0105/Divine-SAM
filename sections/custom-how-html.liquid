@@ -1,0 +1,32 @@
+<div id="{{section.id}}" class="shopify-section">
+    <div class="page-width">
+<div data-aos="fade-up" data-aos-duration="1000" class="custom-how-html-section">
+   <h1>{{section.settings.heading}}</h1> 
+    <p>{{section.settings.content}}</p>
+  </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "how html",
+"settings": [
+{
+"type":"text",
+"id":"heading",
+"label":"Heading"
+},
+{
+"type":"html",
+"id":"content",
+"label":"Heading"
+}
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

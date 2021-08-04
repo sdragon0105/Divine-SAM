@@ -1,0 +1,84 @@
+{% comment %}
+  Renders custom properties of a product
+
+  {% render 'product-custom-properties' %}
+{% endcomment %}
+
+{% assign downcase_type = product.type | downcase %}
+
+{% case downcase_type %}
+{% when 'pop art' %}
+  <div class="product-form__properties">
+    <div class="selector-wrapper swatch swatch-button js product-form__item">
+      <label class="form-label">How many pets?</label>
+      <div class="form-swatches">
+        <div class="swatch-element available" data-value="1">
+          <input class="single-option-selector" type="radio" name="properties[how-many-pets]" value="1" checked="checked" id="PropertiesSelectorHowManyPets-1">
+          <label data-toggle="tooltip" data-placement="top" title="1" for="PropertiesSelectorHowManyPets-1">1</label>
+        </div>
+
+        <div class="swatch-element available" data-value="2">
+          <input class="single-option-selector" type="radio" name="properties[how-many-pets]" value="2" id="PropertiesSelectorHowManyPets-2">
+          <label data-toggle="tooltip" data-placement="top" title="2" for="PropertiesSelectorHowManyPets-2">2</label>
+        </div>
+
+        <div class="swatch-element available" data-value="3">
+          <input class="single-option-selector" type="radio" name="properties[how-many-pets]" value="3" id="PropertiesSelectorHowManyPets-3">
+          <label data-toggle="tooltip" data-placement="top" title="3" for="PropertiesSelectorHowManyPets-3">3</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="selector-wrapper swatch swatch-button js product-form__item">
+      <label class="form-label">Select a background</label>
+      <div class="form-swatches">
+        <div class="swatch-element available" data-value="later">
+          <input class="single-option-selector" type="radio" name="properties[background]" value="later" checked="checked" id="PropertiesSelectorBackground-later">
+          <label data-toggle="tooltip" data-placement="top" title="later" for="PropertiesSelectorBackground-later">later</label>
+        </div>
+
+        <div class="swatch-element available" data-value="now">
+          <input class="single-option-selector" type="radio" name="properties[background]" value="now" id="PropertiesSelectorBackground-now">
+          <label data-toggle="tooltip" data-placement="top" title="now" for="PropertiesSelectorBackground-now">now</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="selector-wrapper js product-form__item product-form__file">
+      <label class="form-label" for="properties_image"><img src="{{ 'icon-upload.png' | asset_url }}" width="20"> Upload your photo (or add one later)</label>
+      <input type="file" name="properties[image]" id="properties_image" accept="image/*">
+
+      <div class="uploaded-image">
+        <a href="javascript:void(0)" class="close js-remove-file" aria-label="close" aria-describedby="a11y-external-message">×</a>
+
+        <div class="image-wrapper">
+          <img src="http://placehold.it/360">
+        </div>
+      </div>
+    </div>
+  </div>
+{% when 'pop chic' %}
+  <div class="product-form__properties">
+    <div class="selector-wrapper product-form__item">
+      <label class="form-label">Enter pet names</label>
+      <div class="product-form__item-content">
+        <input class="form-control" type="text" name="properties[pet-names]">
+      </div>
+    </div>
+
+    <div class="selector-wrapper swatch swatch-button js product-form__item">
+      <label class="form-label">Select a font</label>
+      <div class="form-swatches">
+        <div class="swatch-element available" data-value="arial">
+          <input class="single-option-selector" type="radio" name="properties[font]" value="arial" checked="checked" id="PropertiesSelectorFont-arial">
+          <label data-toggle="tooltip" data-placement="top" title="arial" for="PropertiesSelectorFont-arial">Arial</label>
+        </div>
+
+        <div class="swatch-element available" data-value="roboto">
+          <input class="single-option-selector" type="radio" name="properties[font]" value="roboto" id="PropertiesSelectorFont-roboto">
+          <label data-toggle="tooltip" data-placement="top" title="roboto" for="PropertiesSelectorFont-roboto">Roboto</label>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endcase %}

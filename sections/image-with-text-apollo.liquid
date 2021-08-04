@@ -1,0 +1,98 @@
+<div class="container">
+<div class="feature_sec feature_row padding-top-50 padding-bottom-50">
+  <div class="feature_left feature_col" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="{{ section.settings.fe_image | img_url: 'master' }}">
+  </div>
+  <div class="feature_right feature_col">
+    <div class="section-header text-center">
+      {% if section.settings.beauty_image != blank %}
+          <div class="beauty_img_div desktop_hide padding-bottom-50">
+            <img class="beauty_img" src="{{ section.settings.beauty_image | img_url: 'master' }}" alt="{{ section.settings.image }}">
+          </div>
+      {% endif %}
+      <h2 class="title section_tlt" data-aos="fade-up" data-aos-duration="1000">{{ section.settings.title }}</h2>
+    </div>
+
+    <div class="main_feature123 grid main_container">
+      {% for block in section.blocks %}
+        <div class="image_blog-apollo grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          {% if block.settings.title != blank %}
+            <h4>{{ block.settings.title }}</h4>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <p>{{ block.settings.text }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+<style>
+  .feature_sec {background-color: #eef1f0;}
+</style>
+{% schema %}
+  {
+    "name": "Icon With Text",
+	"class": "mar_top_21",
+    "settings": [
+					{
+                      "type": "text",
+                      "id": "title",
+                      "label": "Title"
+                    },
+                    {
+                      "type": "text",
+                      "id": "text",
+                      "label": "Text"
+                    },
+					{
+                       "type": "header",
+                       "content": "Left Collumn"
+                    },
+					{
+						"type": "image_picker",
+						"id": "fe_image",
+						"label": "Left Image"
+					},
+					{
+                       "type": "header",
+                       "content": "For Mobile Section"
+                    },
+					{
+						"type": "image_picker",
+						"id": "beauty_image",
+						"label": "Image"
+					}
+				],
+				"blocks": [
+							{
+								"type": "image",
+								"name": "feature",
+								"settings": [
+												{
+													"type": "text",
+													"id": "title",
+													"label": "Title"
+												},
+												{
+													"type": "text",
+													"id": "text",
+													"label": "Text"
+												}
+											]
+							}
+						],
+						"presets": [
+										{
+											"name": "Icon With Text"
+										}	
+								]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

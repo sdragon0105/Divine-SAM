@@ -1,0 +1,44 @@
+<div id="{{section.id}}" class="shopify-section">
+<div class="apollo-image-first">
+   <img src="{{section.settings.image |img_url:''}}">
+  </div>
+  <div class="apolo-images">
+  <div class="apollo-image-second">
+   <img src="{{section.settings.image1 |img_url:''}}">
+    <div class="apollo-image-third">
+   <img src="{{section.settings.image2 |img_url:''}}">
+  
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"type":"image_picker",
+"id":"image1",
+"label":"Image"
+},
+{
+"type":"image_picker",
+"id":"image2",
+"label":"Image"
+}
+
+
+
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

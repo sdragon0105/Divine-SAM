@@ -1,0 +1,61 @@
+<div id="{{section.id}}" class="shopify-section">
+<div class="page-width">
+  <div class="custom-content aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+{% if section.settings.title != blank %}
+    <h1 class="mar_bot_2">{{section.settings.title}}</h1>
+{%endif %}
+{% if section.settings.btn_link != blank %}
+<a href="{{section.settings.btn_link}}" class="mar_top_2">{{section.settings.btn}}</a>
+{%endif %}
+  </div></div>
+  <picture>
+  <source media="(min-width:567px)" srcset="{{section.settings.image | img_url:'master' }}">
+  <img src="{{section.settings.image_mob | img_url:'master' }}" alt="Flowers" style="width:100%;">
+</picture>
+</div>
+{% schema %}
+  {
+    "name": "upper text with image",
+    "settings": [
+{
+"type":"text",
+"id":"title",
+"label":"Heading"
+},
+{
+"type":"text",
+"id":"btn",
+"label":"Button"
+},
+{
+"type":"url",
+"id":"btn_link",
+"label":"Button link"
+},
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"type":"image_picker",
+"id":"image_mob",
+"label":"Mobile Image"
+}
+],
+
+   "presets": [
+      {
+        "name": "custom-from",
+        "category": "custom section"
+       
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

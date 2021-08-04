@@ -1,0 +1,73 @@
+<div id="{{section.id}}" class="shopify-section">
+  <div class="container">
+  <div class="product-zeus-bg">
+<!--   <h1 data-aos="fade-up" data-aos-duration="1000">{{section.settings.title}}</h1> -->
+    <h1 data-aos="fade-up" data-aos-duration="1000">{{product.metafields.product-block.block-heading}}</h1>
+<!--     <div  data-aos="fade-up" data-aos-duration="1000" class="ma_hu">{{section.settings.title-second}}</div> -->
+    <div  data-aos="fade-up" data-aos-duration="1000" class="ma_hu">{{product.metafields.product-block.block-text}}</div>
+<div class="custom-zeus-block-section">
+  {% for block in section.blocks %}
+  <div class="custom-zeus-block-content"  data-aos="fade-up" data-aos-duration="1000">
+<img src="{{block.settings.image |img_url:''}}">
+<span>{{block.settings.title-step}}</span>
+  <p>{{block.settings.content}}</p>
+  </div>{%endfor%}
+    </div>
+     <p class="info_tt">{{section.settings.title-sub}}</p> 
+  </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "product blocks",
+    "settings": [
+{
+"type":"text",
+"id":"title",
+"label":"Heading"
+},
+{
+"type":"html",
+"id":"title-second",
+"label":"content"
+},
+{
+"type":"text",
+"id":"title-sub",
+"label":"bottom title"
+}
+],
+"blocks": [
+{
+"type": "first-section",
+"name": "steps",
+"settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"id": "title-step",
+"type": "text",
+"label": "step"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+}
+]
+}
+]
+  
+}
+  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

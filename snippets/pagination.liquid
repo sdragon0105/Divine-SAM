@@ -1,0 +1,44 @@
+{% comment %}
+        Renders a pagination bar
+
+        Accepts:
+        - paginate: {Object} Paginate Liquid object (required)
+
+        Usage:
+        {% include 'pagination', paginate: paginate %}
+{% endcomment %}
+<ul class="list--inline pagination">
+    {% unless paginate.previous.is_link %}
+        <li class="pagination__item pagination__item--first">
+            <button class="btn btn--tertiary" disabled>
+                <svg class="icon"><use xlink:href="#icon-arrow-left" /></svg>
+                <span class="text hide">{{ 'general.pagination.previous' | t }}</span>
+            </button>
+        </li>
+        {% else %}
+        <li class="pagination__item pagination__item--first">
+            <a href="{{ paginate.previous.url }}" class="btn btn--tertiary" aria-label="link">
+                <svg class="icon"><use xlink:href="#icon-arrow-left" /></svg>
+                <span class="text hide">{{ 'general.pagination.previous' | t }}</span>
+            </a>
+        </li>
+    {% endunless %}
+
+    <li class="pagination__item">{{ 'general.pagination.current_page_1' | t: current: paginate.current_page, total: paginate.pages }}</li>
+
+    {% unless paginate.next.is_link %}
+        <li class="pagination__item pagination__item--last">
+            <button class="btn btn--tertiary" disabled>
+                <span class="text hide">{{ 'general.pagination.next' | t }}</span>
+                <svg class="icon"><use xlink:href="#icon-arrow-right" /></svg>
+            </button>
+        </li>
+    {% else %}
+        <li class="pagination__item pagination__item--last">
+            <a href="{{ paginate.next.url }}" class="btn btn--tertiary" aria-label="link">
+                <span class="text hide">{{ 'general.pagination.next' | t }}</span>
+                <svg class="icon"><use xlink:href="#icon-arrow-right" /></svg>
+            </a>
+        </li>
+    {% endunless %}
+</ul>

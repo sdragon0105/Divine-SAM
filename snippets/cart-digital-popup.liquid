@@ -1,0 +1,40 @@
+{% assign cart_digital_item_id = nil %}
+{% assign cart_digital_enable = false %}
+{% assign cart_digital_product = all_products[settings.digital_art_product] %}
+{% assign cart_digital_variant = nil %}
+{% if settings.enable_cart_digital_product and cart_digital_product != blank %}
+    {% assign cart_digital_variant_id = cart_digital_product.selected_or_first_available_variant.id %}
+    {% assign cart_digital_variant = cart_digital_product.selected_or_first_available_variant %}
+    {% assign cart_digital_enable = true %}
+{% endif %}
+
+{% if cart_digital_enable %}
+  <div class="cart-digital-popup-wrapper cart-digital-popup-wrapper--hidden" role="dialog" aria-modal="true" aria-labelledby="CartDigitalPopupHeading" data-cart-digital-popup-wrapper>
+    <div class="cart-digital-popup" data-cart-digital-popup tabindex="-1">
+      <div class="cart-digital-popup-header">
+        <label class="cart-digital-popup-title">Add to your order</label>
+        <button class="cart-digital-popup__close" aria-label="{{ 'general.accessibility.close_modal' | t }}" data-cart-digital-popup-close>
+          <span aria-hidden="true">&#215;</span>
+        </button>
+      </div>
+
+      <div class="cart-digital-popup-content">
+        <div class="digital-art-product">
+          <div class="digital-art-product-image">
+            <img src="{{ cart_digital_product.featured_image | img_url: 'small' }}">
+          </div>
+          <div class="digital-art-product-content">
+            <h2>{{ cart_digital_product.title }}</h2>
+            <label class="digital-art-product-price">{{ cart_digital_variant.price | money }}</label>
+          </div>
+        </div>
+        <p>Your approved art file will be yours to keep. Use it for whatever you'd like.</p>
+      </div>
+
+      <div class="cart-digital-popup-footer">
+        <a href="javascript:;" class="btn js-no-digital-art">No thanks</a>
+        <a href="javascript:;" class="btn js-add-digital-art" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}">Add</a>
+      </div>
+    </div>
+  </div>
+{% endif %}

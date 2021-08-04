@@ -1,0 +1,15 @@
+<!-- teeinblue scripts. DON'T MODIFY!!! -->
+{% if template contains 'product' %}
+  {% if product.metafields.teeinblue.campaign_version %}
+    <link rel="preload" href="https://api.teeinblue.com/api/merchant/campaigns/{{ product.handle }}.json?shop={{ shop.permanent_domain }}&v={{ product.metafields.teeinblue.campaign_version }}" as="fetch">
+  {% endif %}
+  <script id="teeinblue-product-data">
+    window.TeeInBlueCampaign = {
+      {% if product.metafields.teeinblue.campaign_version %}
+      version: {{ product.metafields.teeinblue.campaign_version }},
+      {% endif %}
+    };
+  </script>
+{% endif %}
+<script type="text/javascript" src="https://sdk.teeinblue.com/shopify/app-v1.js?token=HJoVlgIvcVAXyDyn62opbSKPvKaOxzFN&shop=popmypet.myshopify.com" defer="defer"></script>
+<!-- teeinblue scripts end. -->

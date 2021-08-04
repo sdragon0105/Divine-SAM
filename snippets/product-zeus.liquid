@@ -1,0 +1,46 @@
+{% if settings.breadcrumb_layout == 'top' %}
+    {% render 'breadcrumb', breadcrumb_top: true %}
+{% endif %}
+<div class="page page-productDetail zeus-detailPage">
+        {% section 'product-template-zeus' %}
+       {% section 'product-zeus-block' %}
+      {% section 'zeus-image-with-blockcontent' %}
+     {% section 'zeus-but-box' %}
+    {% section 'zeus-pro-collection' %}
+       {% section 'zeus-faq' %}
+              {% section 'zeus-images' %} 
+      
+      
+      
+     
+   
+ 
+
+<!--         <div class="product-tab-container">
+            <div class="product-tab__item">
+                {% section 'product-tab-horizontal' %}
+            </div>
+            <div class="product-tab__item">
+                {% section 'product-add-more' %}
+            </div>
+        </div> -->
+
+    {% section 'product-how-it-works' %}
+
+        {% section 'product-recommendations' %}
+
+        {% section 'recently-viewed-products' %}
+
+    {% section 'product-why-choose-us' %}
+
+    <div class="container">
+        <div id="looxReviews" data-product-id="{{ product.id }}" class="loox-reviews-default"></div>
+    </div>
+</div>
+{% if settings.enable_ask_an_expert %}
+    {% render 'ask-an-expert-popup' %}
+{% endif %}
+
+{% if settings.breadcrumb_layout == 'bottom' %}
+    {% render 'breadcrumb' %}
+{% endif %}

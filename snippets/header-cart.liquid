@@ -1,0 +1,15 @@
+{% if pagename == 'cart' %}
+    <a class="navUser-action" href="{{ routes.cart_url }}" aria-label="cart" data-cart-pc>
+<!--       your order -->
+<!--         <svg class="icon"><use xlink:href="#icon-cart" /></svg> -->
+          <img src="https://cdn.shopify.com/s/files/1/0556/6529/5509/files/trolley_1.svg?v=1627367434">
+        <span class="countPill cart-quantity" data-cart-count>{{ cart.item_count }}</span>
+    </a>
+{% else %}
+    <a class="navUser-action" href="javascript:void(0)" aria-label="link" data-cart-pc>
+<!--       your order -->
+<!--         <svg class="icon"><use xlink:href="#icon-cart" /></svg> -->
+          <img src="https://cdn.shopify.com/s/files/1/0556/6529/5509/files/trolley_1.svg?v=1627367434">
+        <span class="countPill cart-quantity" data-cart-count>{{ cart.item_count }}</span>
+    </a>
+{% endif %}

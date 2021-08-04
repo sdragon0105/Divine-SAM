@@ -1,0 +1,64 @@
+{% assign pagename = request.page_type | handle %}
+
+<div class="header-PC">
+    <div class="container">
+        <div class="header-middle">
+            <div class="header-middle__logo">
+                <div class="logo-wrapper" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="url" content="{{ shop.url }}">
+                    {% if settings.logo != blank %}
+                        {% assign img_size = settings.logo_max_width | append: 'x' %}
+                        {% assign img_url = settings.logo | img_url: img_size %}
+                        <a href="{{ routes.root_url }}" class="site-header__logo-image" aria-label="logo" style="width: {{ settings.logo_max_width }}px; max-width: {{ settings.logo_max_width }}px">
+                            {% capture logo_alt %}{{ settings.logo.alt | default: shop.name }}{% endcapture %}
+                            <img itemprop="logo" src="{{ img_url }}" alt="{{ logo_alt | escape }}">
+                        </a>
+                    {% else %}
+                        <a class="logo_text" href="{{ routes.root_url }}" aria-label="logo" style="width: {{ settings.logo_max_width }}px">
+                            {% if settings.logo_text != blank %}
+                                {{ settings.logo_text }}
+                            {% else %}
+                                {{ shop.name }}
+                            {% endif %}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="header-middle__navigation">
+                {% render 'site-nav', main_menu: section.settings.main_linklist %}
+            </div>
+            <div class="header-middle__right">
+               {% if template != "product.zeus" %}
+<!--               <a class="cta" href="{{section.settings.btn_link}}">{{section.settings.btn}}</a> -->
+              {% endif %}
+                {% if shop.customer_accounts_enabled %}
+                    {% if section.settings.enable-header-account and section.settings.header-account-position == 'right' %}
+                        <div class="header-middle__item header-middle__item--account">
+                            {% render 'header-account', pagename: pagename %}
+                        </div>
+                    {% endif %}
+                {% endif %}
+                {% if section.settings.enable-header-search and section.settings.header-search-position == 'right' %}
+                    <div class="header-middle__item header-middle__item--quickSearch">
+                        <a class="navUser-action" href="javascript:void(0)" aria-label="link" data-search-popup>
+                            {{ 'general.search.placeholder' | t }}
+                        </a>
+                    </div>
+                {% endif %}
+                {% if section.settings.enable-header-wishlist and section.settings.header-wishlist-position == 'right' %}
+                    <div class="header-middle__item header-middle__item--wishlist">
+                        <a class="navUser-action" href="{{ routes.cart_url | split: '/cart' | first }}/pages/wish-list" aria-label="link">
+                            {{ 'general.wishlist.wishlist' | t }}
+                            <span data-wishlist-count>(0)</span>
+                        </a>
+                    </div>
+                {% endif %}
+                {% if section.settings.enable-header-cart and section.settings.header-cart-position == 'right' %} <!-- and template == 'product.zeus' -->
+                    <div class="header-middle__item header-middle__item--cart">
+                        {% render 'header-cart', pagename: pagename %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

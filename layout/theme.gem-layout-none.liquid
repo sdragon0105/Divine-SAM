@@ -1,0 +1,82 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <meta name="Description" content="Belle Dolls Shopify theme developed by HaloTheme">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon != blank -%}
+        <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+
+    {%- capture seo_title -%}
+        {%- if request.page_type == 'search' and search.performed == true -%}
+            {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+        {%- else -%}
+            {{ page_title }}
+        {%- endif -%}
+        {%- if current_tags -%}
+            {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+        {%- endif -%}
+        {%- if current_page != 1 -%}
+            &ndash; {{ 'general.meta.page' | t: page: current_page }}
+        {%- endif -%}
+        {%- assign escaped_page_title = page_title | escape -%}
+        {%- unless escaped_page_title contains shop.name -%}
+            &ndash; {{ shop.name }}
+        {%- endunless -%}
+    {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
+
+    {%- if page_description -%}
+        <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+
+    {% render 'head-script' %}
+
+    {{ content_for_header }}
+
+	{{ shop.metafields.loox["global_html_head"] }}
+ 
+    {% assign cart_digital_item_id = nil %}
+    {% assign cart_digital_enable = false %}
+    {% assign cart_digital_product = all_products[settings.digital_art_product] %}
+    {% assign cart_digital_variant = nil %}
+    {% if settings.enable_cart_digital_product and cart_digital_product != blank %}
+        {% assign cart_digital_variant_id = cart_digital_product.selected_or_first_available_variant.id %}
+        {% assign cart_digital_variant = cart_digital_product.selected_or_first_available_variant %}
+        {% assign cart_digital_enable = true %}
+
+        <script type="text/javascript">
+            window.cart_digital_variant_id = {{ cart_digital_variant_id }};
+        </script>
+    {% endif %}
+
+{% include 'pagefly-header' %}
+ <!--Gem_Page_Header_Script-->
+{% include 'gem-app-header-scripts' %}
+<!--End_Gem_Page_Header_Script-->
+</head> 
+
+<body>
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container -->
+<!--Gem_Page_Footer_Script-->
+{% include 'gem-app-footer-scripts' %}
+<!--End_Gem_Page_Footer_Script-->
+{% include 'booster-recommendation' %}
+</body>
+</html>

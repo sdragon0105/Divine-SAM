@@ -1,0 +1,183 @@
+{% assign img_url = section.settings.header_image | img_url: '1920x970' %}
+
+<div class="support-header hero hero--large">
+  <div class="hero__image{% if section.settings.header_image_mobile != blank %} hero__image--mobile{% endif %}">
+    {% if section.settings.header_image_mobile != blank %}
+      <img class="hero__image--backgroundMobile lazyload" data-srcset="{{ section.settings.header_image_mobile | img_url: 'master' }}" alt="" data-image>
+    {% endif %}
+    {% if section.settings.header_image == blank %}
+      <div class="placeholder-background">
+        <span class="recommended_size">1920x970</span>
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+    {% else %}
+      <img class="hero__image--background lazyload" data-srcset="{{ img_url }}" alt="" data-image>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+  <div class="support-content">
+    <div class="section-header">
+      {% if section.settings.content_title != blank %}
+        <h2 class="title">{{ section.settings.content_title }}</h2>
+      {% endif %}
+
+      {% if section.settings.content_subtitle != blank %}
+        <p class="subtitle">{{ section.settings.content_subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <div class="support-methods">
+      {% if section.settings.faq_label != blank and section.settings.faq_link != blank %}
+        <div class="support-method">
+          <a href="{{ section.settings.faq_link }}" class="btn support-link">{{ section.settings.faq_label }}</a>
+          {% if section.settings.faq_description != blank %}
+            <p>{{ section.settings.faq_description }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.chat_label != blank and section.settings.chat_link != blank %}
+        <div class="support-method">
+          <a href="{{ section.settings.chat_link }}" class="btn support-link"><img src="{{ 'icon-chat.png' | asset_url }}" width="20"> {{ section.settings.chat_label }}</a>
+          {% if section.settings.chat_description != blank %}
+            <p>{{ section.settings.chat_description }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.email_label != blank and section.settings.email_link != blank %}
+        <div class="support-method">
+          <a href="{{ section.settings.email_link }}" class="btn support-link"><img src="{{ 'icon-email.png' | asset_url }}" width="20"> {{ section.settings.email_label }}</a>
+          {% if section.settings.email_description != blank %}
+            <p>{{ section.settings.email_description }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="support-footer">
+    <div class="section-header">
+      {% if section.settings.footer_title != blank %}
+        <h2 class="title">{{ section.settings.footer_title }}</h2>
+      {% endif %}
+    </div>
+
+    <div class="support-footer__content">
+      {% if section.settings.footer_image != blank %}
+        <div class="support-footer__image">
+          <img class="lazyload" data-src="{{ section.settings.footer_image | img_url: '150x' }}" alt="{{ section.settings.footer_title }}">
+        </div>
+      {% endif %}
+      {% if section.settings.footer_description != blank %}
+        <div class="rte">{{ section.settings.footer_description }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Support",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Image",
+      "info": "Recommended Image: 1920x970"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image_mobile",
+      "label": "Image mobile",
+      "info": "Recommended Image: 600x600"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "content_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "content_subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "faq_label",
+      "label": "Faq label"
+    },
+    {
+      "type": "text",
+      "id": "faq_description",
+      "label": "Faq description"
+    },
+    {
+      "type": "url",
+      "id": "faq_link",
+      "label": "Faq link"
+    },
+    {
+      "type": "text",
+      "id": "chat_label",
+      "label": "Chat label"
+    },
+    {
+      "type": "text",
+      "id": "chat_description",
+      "label": "Chat description"
+    },
+    {
+      "type": "text",
+      "id": "chat_link",
+      "label": "Chat link"
+    },
+    {
+      "type": "text",
+      "id": "email_label",
+      "label": "Email label"
+    },
+    {
+      "type": "text",
+      "id": "email_description",
+      "label": "Email description"
+    },
+    {
+      "type": "text",
+      "id": "email_link",
+      "label": "Email link"
+    },
+    {
+      "type": "header",
+      "content": "Footer"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_image",
+      "label": "Image",
+      "info": "Recommended Image: 225x225"
+    },
+    {
+      "type": "text",
+      "id": "footer_title",
+      "label": "Title",
+      "default": "Footer title"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_description",
+      "label": "Description"
+    }
+  ]
+}
+{% endschema %}

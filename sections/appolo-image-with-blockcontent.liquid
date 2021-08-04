@@ -1,0 +1,57 @@
+<div id="{{section.id}}" class="shopify-section">
+
+<div class="main-apollo-image-with-block">
+  <div class="appolo-right-img">
+<img src="{{section.settings.image |img_url:''}}">
+  </div>
+  <div class="appolo-left-content">
+ <h2>{{section.settings.title}}</h2> 
+    {% for block in section.blocks %}
+  <div class="apollo-block-content">
+<span>{{block.settings.title-1}}</span>
+  <p>{{block.settings.content}}</p>
+  </div>{%endfor%}     
+  </div> 
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"right Image"
+},
+{
+"type":"text",
+"id":"title",
+"label":"left Heading"
+}
+],
+"blocks": [
+{
+"type": "content-section",
+"name": "steps",
+"settings": [
+{
+"id": "title-1",
+"type": "text",
+"label": "heading"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+}
+]
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

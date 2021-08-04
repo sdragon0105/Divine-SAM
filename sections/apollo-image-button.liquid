@@ -1,0 +1,63 @@
+<div id="{{section.id}}" class="shopify-section">
+  <div class="page-width">
+  <h1>{{section.settings.title}}</h1>
+  
+    
+    <div class="apollo-image-button">    
+ {% for block in section.blocks %}
+  <div class="apollo-box-block-content">
+ <img src="{{section.settings.image |img_url:''}}">
+ {{section.settings.content}}
+     <a href="{{section.settings.url}}">{{section.settings.btn-title}}</a>
+  </div>{%endfor%}
+    </div>
+  
+</div>
+</div>
+{% schema %}
+{
+ "name": "image button",
+ "settings": [
+{
+"type":"text",
+"id":"title",
+"label":"Heading"
+}
+],
+"blocks": [
+{
+"type": "images-button",
+"name": "blocks",
+"settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+},
+{
+"type":"text",
+"id":"btn-title1",
+"label":"button title"
+},
+{
+"type":"url",
+"id":"url1",
+"label":"button link"
+}
+
+]
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

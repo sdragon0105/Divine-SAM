@@ -1,0 +1,124 @@
+{% if product.metafields.what_in_box1.img %}
+<div class="container">
+<div class="feature_sec padding-top-50 padding-bottom-50">
+  <div class="section-header text-center" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="title section_tlt">What’s In The Box</h2>
+  </div>
+    
+  <div class="main_feature123 grid custom_wdth">
+    {% if product.metafields.what_in_box1.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box1.img }}" >
+          <h4>{{ product.metafields.what_in_box1.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box2.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box2.img }}" >
+          <h4>{{ product.metafields.what_in_box2.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box3.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box3.img }}" >
+          <h4>{{ product.metafields.what_in_box3.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box4.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box4.img }}" >
+          <h4>{{ product.metafields.what_in_box4.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box5.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box5.img }}" >
+          <h4>{{ product.metafields.what_in_box5.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box6.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box6.img }}" >
+          <h4>{{ product.metafields.what_in_box6.title }}</h4>
+      </div>
+    {% endif %}
+    
+    {% if product.metafields.what_in_box7.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box7.img }}" >
+          <h4>{{ product.metafields.what_in_box7.title }}</h4>
+      </div>
+    {% endif %}
+    {% if product.metafields.what_in_box8.img %}
+      <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          <img class="mar_bot_2 icon_widtyh" src="{{ product.metafields.what_in_box8.img }}" >
+          <h4>{{ product.metafields.what_in_box8.title }}</h4>
+      </div>
+    {% endif %}
+    
+    {% comment %}
+      {% for block in section.blocks %}
+        <div class="image_blog grid__item medium-up--one-quarter small--one-half" data-aos="fade-up" data-aos-duration="1000">
+          {% if block.settings.image != blank %}
+            <img class="mar_bot_2 icon_widtyh" src="{{ block.settings.image | img_url: 'master' }}" >
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h4>{{ block.settings.title }}</h4>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endcomment %}
+  </div>
+</div>
+</div>
+{% endif %}
+<style>
+  .feature_sec {background-color: #eef1f0;}
+</style>
+{% schema %}
+  {
+    "name": "What Box",
+	"class": "mar_top_2",
+    "settings": [
+					{
+                      "type": "text",
+                      "id": "title",
+                      "label": "Title"
+                    },
+                    {
+                      "type": "text",
+                      "id": "text",
+                      "label": "Text"
+                    }
+				],
+				"blocks": [
+							{
+								"type": "image",
+								"name": "feature",
+								"settings": [
+                                                {
+                                                    "type": "image_picker",
+                                                    "id": "image",
+                                                    "label": "Image"
+                                                },
+												{
+													"type": "text",
+													"id": "title",
+													"label": "Title"
+												}
+											]
+							}
+						],
+						"presets": [
+										{
+											"name": "What Box"
+										}	
+								]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

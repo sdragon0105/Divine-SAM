@@ -1,0 +1,100 @@
+<div id="{{section.id}}" class="shopify-section">
+  <div class="page-width">
+  <h1 data-aos="fade-up" data-aos-duration="1000">{{section.settings.title}}</h1>
+    <span data-aos="fade-up" data-aos-duration="1000">{{section.settings.title-second}}</span>
+<div class="custom-block-section">
+  {% for block in section.blocks %}
+  <div class="custom-block-content">
+<img data-aos="zoom-in" data-aos-duration="1500" src="{{block.settings.image |img_url:''}}">
+<span data-aos="fade-up" data-aos-duration="1000">{{block.settings.title-step}}</span>
+  <p data-aos="fade-up" data-aos-duration="1000">{{block.settings.content}}</p>
+  </div>{%endfor%}
+    </div>
+  
+    <div class="custom-block-section-mobile">
+      <div class="owl-carousel owl-theme">
+  {% for block in section.blocks %}
+  <div class="item">
+<img data-aos="zoom-in" data-aos-duration="1500" src="{{block.settings.image |img_url:''}}">
+<span data-aos="fade-up" data-aos-duration="1000">{{block.settings.title-step}}</span>
+  <p data-aos="fade-up" data-aos-duration="1000">{{block.settings.content}}</p>
+  </div>{%endfor%}
+      </div></div>  
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+{
+"type":"text",
+"id":"title",
+"label":"Heading"
+},
+{
+"type":"text",
+"id":"title-second",
+"label":"Heading"
+}
+],
+"blocks": [
+{
+"type": "first-section",
+"name": "steps",
+"settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Image"
+},
+{
+"id": "title-step",
+"type": "text",
+"label": "step"
+},
+{
+"id": "content",
+"type": "text",
+"label": "content"
+}
+]
+}
+],
+  "presets": [
+      {
+        "name": "blocks",
+        "category": "custom section"
+       
+      }
+    ]
+}
+  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

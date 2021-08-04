@@ -1,0 +1,24 @@
+footer.site-footer .footer-row__item.footer-row__item--mobile.footer-navigation_list:nth-child(2) li.last {
+    padding-left: 0px;
+}
+.footer-list a span:before {
+    content: '';
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    position: absolute;
+    transition: all .3s ease;
+}
+.footer-list a:hover span:before {
+    width: 100%;
+}
+.collection_text p {
+    text-shadow: 0 0 #fff;
+}
+
+@media screen and (min-width: 750px) {
+div#shopify-section-collection-banner-section .page-width {
+    padding: 0 45px!important;
+}
+}

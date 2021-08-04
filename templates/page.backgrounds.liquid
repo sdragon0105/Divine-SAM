@@ -1,0 +1,12 @@
+{% if settings.breadcrumb_layout == 'top' %}
+    {% render 'breadcrumb', breadcrumb_top: true %}
+{% endif %}
+<div class="page page-backgrounds">
+    {% section 'backgrounds-header' %}
+    {% section 'backgrounds-template' %}
+    {% section 'backgrounds-pop-art' %}
+    {% section 'backgrounds-pop-chic' %}
+</div>
+{% if settings.breadcrumb_layout == 'bottom' %}
+    {% render 'breadcrumb' %}
+{% endif %}

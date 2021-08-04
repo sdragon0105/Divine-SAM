@@ -1,0 +1,231 @@
+<div class="container">
+<div class="collection-sec padding-top-50 padding-bottom-50">
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="section_tlt">{{ section.settings.title | escape }}</h2>
+    </div>
+  {% endif %}
+  
+  <div class="collection-grid">
+    <ul class="grid grid--uniform">
+      {% for block in section.blocks %}
+        <li class="grid__item" data-aos="fade-up" data-aos-duration="1000">
+          {%- assign collection = collections[block.settings.collection] -%}
+          	<img src="{{ collection.image | img_url: 'medium' }}">
+          <div class="collection_info">
+          	<h2>{{ collection.title }}</h2>
+          	<a class="col_btn" href="{{ collection.url }}">{{ block.settings.btn_txt }}</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Seznam kolekcí",
+    "da": "Kollektionsliste",
+    "de": "Kategorien-Liste",
+    "en": "Collection list",
+    "es": "Lista de colecciones",
+    "fi": "Kokoelmaluettelo",
+    "fr": "Liste des collections",
+    "it": "Elenco delle collezioni",
+    "ja": "コレクションリスト",
+    "ko": "컬렉션 목록",
+    "nb": "Samlingsliste",
+    "nl": "Collectielijst",
+    "pl": "Lista kolekcji",
+    "pt-BR": "Lista de coleções",
+    "pt-PT": "Lista de coleções",
+    "sv": "Kollektionslista",
+    "th": "รายการคอลเลกชัน",
+    "tr": "Koleksiyon listesi",
+    "vi": "Danh sách bộ sưu tập",
+    "zh-CN": "产品系列列表",
+    "zh-TW": "商品系列清單"
+  },
+  "class": "mar_top_2",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "cs": "Nadpis",
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading",
+        "es": "Título",
+        "fi": "Otsake",
+        "fr": "En-tête",
+        "it": "Heading",
+        "ja": "見出し",
+        "ko": "제목",
+        "nb": "Overskrift",
+        "nl": "Kop",
+        "pl": "Nagłówek",
+        "pt-BR": "Título",
+        "pt-PT": "Título",
+        "sv": "Rubrik",
+        "th": "ส่วนหัว",
+        "tr": "Başlık",
+        "vi": "Tiêu đề",
+        "zh-CN": "标题",
+        "zh-TW": "標題"
+      },
+      "default": {
+        "cs": "Seznam kolekcí",
+        "da": "Kollektionsliste",
+        "de": "Kategorien-Liste",
+        "en": "Collection list",
+        "es": "Lista de colecciones",
+        "fi": "Kokoelmaluettelo",
+        "fr": "Page de liste des collections",
+        "it": "Elenco delle collezioni",
+        "ja": "コレクションリスト",
+        "ko": "컬렉션 목록",
+        "nb": "Samlingsliste",
+        "nl": "Collectielijst",
+        "pl": "Lista kolekcji",
+        "pt-BR": "Lista de coleções",
+        "pt-PT": "Lista de coleções",
+        "sv": "Kollektionslista",
+        "th": "รายการคอลเลกชัน",
+        "tr": "Koleksiyon listesi",
+        "vi": "Danh sách bộ sưu tập",
+        "zh-CN": "产品系列列表",
+        "zh-TW": "商品系列清單"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_collection",
+      "name": {
+        "cs": "Kolekce",
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fi": "Kokoelma",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "ko": "컬렉션",
+        "nb": "Samling",
+        "nl": "Collectie",
+        "pl": "Kolekcja",
+        "pt-BR": "Coleção",
+        "pt-PT": "Coleção",
+        "sv": "Produktserie",
+        "th": "คอลเลกชัน",
+        "tr": "Koleksiyon",
+        "vi": "Bộ sưu tập",
+        "zh-CN": "收藏",
+        "zh-TW": "商品系列"
+      },
+      "settings": [
+        {
+          "label": {
+            "cs": "Kolekce",
+            "da": "Kollektion",
+            "de": "Kategorie",
+            "en": "Collection",
+            "es": "Colección",
+            "fi": "Kokoelma",
+            "fr": "Collection",
+            "it": "Collezione",
+            "ja": "コレクション",
+            "ko": "컬렉션",
+            "nb": "Samling",
+            "nl": "Collectie",
+            "pl": "Kolekcja",
+            "pt-BR": "Coleção",
+            "pt-PT": "Coleção",
+            "sv": "Produktserie",
+            "th": "คอลเลกชัน",
+            "tr": "Koleksiyon",
+            "vi": "Bộ sưu tập",
+            "zh-CN": "收藏",
+            "zh-TW": "商品系列"
+          },
+          "id": "collection",
+          "type": "collection"
+        },
+		{
+			"type": "text",
+			"id": "btn_txt",
+			"label": "Button Text"
+		}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Seznam kolekcí",
+        "da": "Kollektionsliste",
+        "de": "Kategorien-Liste",
+        "en": "Collection list",
+        "es": "Lista de colecciones",
+        "fi": "Kokoelmaluettelo",
+        "fr": "Page de liste des collections",
+        "it": "Elenco delle collezioni",
+        "ja": "コレクションリスト",
+        "ko": "컬렉션 목록",
+        "nb": "Samlingsliste",
+        "nl": "Collectielijst",
+        "pl": "Lista kolekcji",
+        "pt-BR": "Lista de coleções",
+        "pt-PT": "Lista de coleções",
+        "sv": "Kollektionslista",
+        "th": "รายการคอลเลกชัน",
+        "tr": "Koleksiyon listesi",
+        "vi": "Danh sách bộ sưu tập",
+        "zh-CN": "产品系列列表",
+        "zh-TW": "商品系列清單"
+      },
+      "category": {
+        "cs": "Kolekce",
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fi": "Kokoelma",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "ko": "컬렉션",
+        "nb": "Samling",
+        "nl": "Collectie",
+        "pl": "Kolekcja",
+        "pt-BR": "Coleção",
+        "pt-PT": "Coleção",
+        "sv": "Produktserie",
+        "th": "คอลเลกชัน",
+        "tr": "Koleksiyon",
+        "vi": "Bộ sưu tập",
+        "zh-CN": "收藏",
+        "zh-TW": "商品系列"
+      },
+      "blocks": [
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

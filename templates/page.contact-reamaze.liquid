@@ -1,0 +1,23 @@
+{% if settings.breadcrumb_layout == 'top' %}
+    {% render 'breadcrumb', breadcrumb_top: true %}
+{% endif %}
+<div class="container">
+    <div class="page page-default">
+        <div class="section-header text-left">
+            <h1 class="title title--large">{{ page_title }}</h1>
+        </div>
+        <div class="rte">
+            <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
+            <script type="text/javascript">
+              var _support = _support || { 'ui': {}, 'user': {} };
+              _support['account'] = 'divine';
+              _support['contact_custom_fields'] = _support['contact_custom_fields'] || {};
+              _support['contact_custom_fields']['rmz_form_id_24504'] = {};
+            </script>
+            <div data-reamaze-embed="contact" data-reamaze-embed-form-id="24504"></div>
+        </div>
+    </div>
+</div>
+{% if settings.breadcrumb_layout == 'bottom' %}
+    {% render 'breadcrumb' %}
+{% endif %}

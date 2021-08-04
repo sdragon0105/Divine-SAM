@@ -1,0 +1,303 @@
+{%- assign product_height = settings.product_card_height_procent -%}
+{%- assign show_product_switch_image = settings.show_product_switch_image -%}
+{%- assign hide_product_featured_images = false -%}
+{%- if product.tags contains 'Hide Featured Image' -%}
+  {%- assign hide_product_featured_images = true -%}
+{%- endif -%}
+{%- assign image_threshold = 1 -%}
+{%- if hide_product_featured_images -%}
+  {%- assign image_threshold = 2 -%}
+  {%- if show_product_switch_image -%}
+    {%- assign image_threshold = 3 -%}
+  {%- endif -%}
+{%- endif -%}
+
+{% assign customer_images_size = 0 %}
+{% assign product_images_size = 0 %}
+{% for image in product.images %}
+  {% if image.alt contains 'customer' %}
+    {% assign customer_images_size = customer_images_size | plus: 1 %}
+  {% else %}
+    {% assign product_images_size = product_images_size | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<div class="product-single__photos product-single__photos--hide">
+  {% if customer_images_size > 0 %}
+    <div class="product-single__photos--customer">
+      <div class="wrapper-image">
+        {% render 'product-badges' with product as product, serial: 1 %}
+        <div class="product-single__photos-wrapper product-single__photos-wrapper-{{ section_id }} {% if customer_images_size > 1 %}slider{% endif %}">
+          {% for media in product.media %}
+            {% if media.alt contains 'customer' %}
+              {% capture img_id %}FeaturedImage-{{ section_id }}-{{ media.id }}{% endcapture %}
+              {% capture img_class %}product-featured-img{% endcapture %}
+              {% capture zoom_img_id %}FeaturedImageZoom-{{ section_id }}-{{ media.id }}{% endcapture %}
+              {% capture img_wrapper_id %}{{ zoom_img_id }}-wrapper{% endcapture %}
+              {% assign img_url = media | img_url: 'master' %}
+
+              {% case media.media_type %}
+                {% when 'image' %}
+                  <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                    <div
+                    id="{{ zoom_img_id }}"
+                    class="product-single__photo {% if enable_zoom %}js-zoom-enabled{% endif %}{% if customer_images_size > 1 %} product-single__photo--has-thumbnails{% endif %} number__{{ forloop.index0 }}"
+                    data-image-id="{{ media.id }}"
+                    {% if enable_fancybox %} data-fancybox="images-single" href="{{ media | img_url: 'master' }}"{% endif %}
+                    {% if enable_zoom %} data-zoom="{{ media | img_url: product_image_zoom_size }}"{% endif %}
+                    style="--my-height-var:{{ product_height }}%">
+                      <img id="{{ img_id }}"
+                        class="product-single__photo-image {{ img_class }} lazyload lazypreload"
+                        srcset="{{ media | img_url: '300x300' }}"
+                        data-srcset="{{ img_url }}"
+                        tabindex="-1"
+                        alt="{{ media.alt | escape }}">
+                    </div>
+                  </div>
+                {% when 'external_video' %}
+                  <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                    <div id="{{ zoom_img_id }}" class="product-single__photo product-single__media product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                      {{ media | external_video_tag }}
+                    </div>
+                  </div>
+                {% when 'model' %}
+                  <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                    <div id="{{ zoom_img_id }}" class="product-single__photo product-single__media model-viewer-click product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                      {{ media | model_viewer_tag: image_size: '500x', reveal: 'interaction', toggleable: true, data-model-id: media.id, auto-rotate: true, id: 'paused-change-demo' }}
+                    </div>
+                  </div>
+                {% else %}
+                  <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                    <div id="{{ zoom_img_id }}" class="product-single__photo product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                      {{ media | media_tag }}
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% if enable_zoom %}
+          <div class="hover-to-zoom">
+            <svg class="icon"><use xlink:href="#icon-search" /></svg>
+            <span class="text">{{ 'products.product.zoom' | t }}</span>
+          </div>
+        {% endif %}
+        {% if settings.enable_ask_an_expert %}
+          <div class="ask-an-expert">
+            <a class="btn btn--secondary ask-an-expert__link" href="javascript:void(0)" aria-label="link">
+              {{ 'general.askanexpert.title' | t }}
+            </a>
+          </div>
+        {% endif %}
+        {% if enable_video_product and product.metafields.halo['video'] != blank %}
+          <div class="product-single__videos">
+            <a class="video-link" href="javascript:void(0);" aria-label="link" data-popup-video="{{ product.metafields.halo['video'] }}">
+              <svg class="icon"><use xlink:href="#icon-camera" /></svg>
+            </a>
+          </div>
+        {% endif %}
+        {% if enable_compare_color and show_compare_color %}
+          <div class="product-single__compareColor">
+            <a class="compareColor-link" href="javascript:void(0);" aria-label="link">
+              {{ "products.product.compareColor" | t }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if customer_images_size > 0 %}
+      <div class="thumbnails-wrapper">
+        <div class="product-single__thumbnails product-single__thumbnails-{{ section_id }}">
+          {% for media in product.media %}
+            {% if media.alt contains 'customer' %}
+              {% case media.media_type %}
+              {% when 'image' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <a href="{{ media.src | img_url: product_image_zoom_size, scale: product_image_scale }}"
+                    class="product-thumbnails__photo product-single__thumbnail--{{ section_id }}"
+                    data-thumbnail-id="{{ media.id }}" aria-label="link"
+                    {% if enable_zoom %}data-zoom="{{ media.src | img_url: product_image_zoom_size, scale: product_image_scale }}"{% endif %} style="--my-height-var:{{ product_height }}%">
+                    <img class="product-thumbnails__photo-image" srcset="{{ media.src | img_url: 'compact' | split: '?' | first }}" alt="{{ 'sections.featured_product.gallery_thumbnail_alt' | t: imageAlt: media.alt | escape }}">
+                  </a>
+                </div>
+              {% when 'external_video' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }} product-single__media" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    <img id="product-featured-image-{{media.id}}" class="product-single__thumbnail-image" src="https://img.youtube.com/vi/{{ media | external_video_tag | split: 'embed/' | last | split: '?' | first }}/0.jpg" alt="{{ media.alt }}">
+                    <div class="product-single__thumbnail--icon" aria-label="Play 3D Viewer">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.148 494.148" xml:space="preserve"><g><g><path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124 c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884 C432.632,229.572,422.964,213.288,405.284,201.188z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+                  </div>
+                </div>
+              {% when 'model' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }} product-single__media" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | model_viewer_tag: image_size: image_size, reveal: 'interaction', toggleable: true, data-model-id: media.id, auto-rotate: true }}
+                    <div class="product-single__thumbnail--icon" aria-label="Play 3D Viewer">
+                      <svg id="Capa_1" enable-background="new 0 0 511.973 511.973" height="512" viewBox="0 0 511.973 511.973" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m255.989 0-221.693 127.993v255.985l221.693 127.994 221.688-127.994v-255.985zm176.683 136.651-176.683 101.965-176.688-101.965 176.688-102.01zm-368.376 25.977 176.693 101.969v204.074l-176.693-102.013zm206.693 306.043v-204.074l176.688-101.968v204.03z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              {% else %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }}" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | media_tag }}
+                  </div>
+                </div>
+            {% endcase %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="product-single__photos--product {% if customer_images_size > 0 %}hide{% endif %}">
+    <div class="wrapper-image">
+      {% render 'product-badges' with product as product, serial: 1 %}
+      <div class="product-single__photos-wrapper product-single__photos-wrapper-{{ section_id }} {% if product_images_size > image_threshold %}slider{% endif %}">
+        {%- assign _image_threshold = image_threshold | minus: 1 -%}
+        {%- assign _featured_image = product.featured_image -%}
+        {%- if hide_product_featured_images -%}
+          {% assign _featured_image = product.media[_image_threshold] %}
+        {%- endif -%}
+        {%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: _featured_image -%}
+        {% assign count = 0 %}
+        {% for media in product.media %}
+          {% unless media.alt contains 'customer' %}
+            {% assign count = count | plus: 1 %}
+            {% if count < _image_threshold %}{% continue %}{% endif %}
+            {% capture img_id %}FeaturedImage-{{ section_id }}-{{ media.id }}{% endcapture %}
+            {% capture img_class %}product-featured-img{% endcapture %}
+            {% capture zoom_img_id %}FeaturedImageZoom-{{ section_id }}-{{ media.id }}{% endcapture %}
+            {% capture img_wrapper_id %}{{ zoom_img_id }}-wrapper{% endcapture %}
+            {% assign img_url = media | img_url: 'master' %}
+
+            {% case media.media_type %}
+              {% when 'image' %}
+                <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                  <div
+                  id="{{ zoom_img_id }}"
+                  class="product-single__photo {% if enable_zoom %}js-zoom-enabled{% endif %}{% if product_images_size > image_threshold %} product-single__photo--has-thumbnails{% endif %} number__{{ forloop.index0 }}"
+                  data-image-id="{{ media.id }}"
+                  {% if enable_fancybox %} data-fancybox="images-single" href="{{ media | img_url: 'master' }}"{% endif %}
+                  {% if enable_zoom %} data-zoom="{{ media | img_url: product_image_zoom_size }}"{% endif %}
+                  style="--my-height-var:{{ product_height }}%">
+                    <img id="{{ img_id }}"
+                      class="test product-single__photo-image {{ img_class }} lazyload{% unless featured_image == media %} lazypreload{% endunless %}"
+                      srcset="{{ media | img_url: '300x300' }}"
+                      data-srcset="{{ img_url }}"
+                      tabindex="-1"
+                      alt="{{ media.alt | escape }}">
+                  </div>
+                </div>
+              {% when 'external_video' %}
+                <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                  <div id="{{ zoom_img_id }}" class="product-single__photo product-single__media product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | external_video_tag }}
+                  </div>
+                </div>
+              {% when 'model' %}
+                <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                  <div id="{{ zoom_img_id }}" class="product-single__photo product-single__media model-viewer-click product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | model_viewer_tag: image_size: '500x', reveal: 'interaction', toggleable: true, data-model-id: media.id, auto-rotate: true, id: 'paused-change-demo' }}
+                  </div>
+                </div>
+              {% else %}
+                <div id="{{ img_wrapper_id }}" class="product-single__photos--item filter-{{ media.alt | handle }}">
+                  <div id="{{ zoom_img_id }}" class="product-single__photo product-single__photo--has-thumbnails number__{{ forloop.index0 }}" data-image-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | media_tag }}
+                  </div>
+                </div>
+            {% endcase %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+      {% if enable_zoom %}
+        <div class="hover-to-zoom">
+          <svg class="icon"><use xlink:href="#icon-search" /></svg>
+          <span class="text">{{ 'products.product.zoom' | t }}</span>
+        </div>
+      {% endif %}
+      {% if settings.enable_ask_an_expert %}
+        <div class="ask-an-expert">
+          <a class="btn btn--secondary ask-an-expert__link" href="javascript:void(0)" aria-label="link">
+            {{ 'general.askanexpert.title' | t }}
+          </a>
+        </div>
+      {% endif %}
+      {% if enable_video_product and product.metafields.halo['video'] != blank %}
+        <div class="product-single__videos">
+          <a class="video-link" href="javascript:void(0);" aria-label="link" data-popup-video="{{ product.metafields.halo['video'] }}">
+            <svg class="icon"><use xlink:href="#icon-camera" /></svg>
+          </a>
+        </div>
+      {% endif %}
+      {% if enable_compare_color and show_compare_color %}
+        <div class="product-single__compareColor">
+          <a class="compareColor-link" href="javascript:void(0);" aria-label="link">
+            {{ "products.product.compareColor" | t }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+
+    {% assign image_threshold_thumb = image_threshold | minus: 1 %}
+    {% if product_images_size > image_threshold_thumb %}
+    <div class="thumbnails-wrapper">
+      <div class="product-single__thumbnails product-single__thumbnails-{{ section_id }}">
+        {% assign count = 0 %}
+        {% for media in product.media %}
+          {% unless media.alt contains 'customer' %}
+            {% assign count = count | plus: 1 %}
+            {% if count < image_threshold_thumb %}{% continue %}{% endif %}
+            {% case media.media_type %}
+              {% when 'image' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <a href="{{ media.src | img_url: product_image_zoom_size, scale: product_image_scale }}"
+                    class="product-thumbnails__photo product-single__thumbnail--{{ section_id }}"
+                    data-thumbnail-id="{{ media.id }}" aria-label="link"
+                    {% if enable_zoom %}data-zoom="{{ media.src | img_url: product_image_zoom_size, scale: product_image_scale }}"{% endif %} style="--my-height-var:{{ product_height }}%">
+                    <img class="product-thumbnails__photo-image" srcset="{{ media.src | img_url: 'compact' | split: '?' | first }}" alt="{{ 'sections.featured_product.gallery_thumbnail_alt' | t: imageAlt: media.alt | escape }}">
+                  </a>
+                </div>
+              {% when 'external_video' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }} product-single__media" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    <img id="product-featured-image-{{media.id}}" class="product-single__thumbnail-image" src="https://img.youtube.com/vi/{{ media | external_video_tag | split: 'embed/' | last | split: '?' | first }}/0.jpg" alt="{{ media.alt }}">
+                    <div class="product-single__thumbnail--icon" aria-label="Play 3D Viewer">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.148 494.148" xml:space="preserve"><g><g><path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124 c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884 C432.632,229.572,422.964,213.288,405.284,201.188z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+                  </div>
+                </div>
+              {% when 'model' %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }} product-single__media" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | model_viewer_tag: image_size: image_size, reveal: 'interaction', toggleable: true, data-model-id: media.id, auto-rotate: true }}
+                    <div class="product-single__thumbnail--icon" aria-label="Play 3D Viewer">
+                      <svg id="Capa_1" enable-background="new 0 0 511.973 511.973" height="512" viewBox="0 0 511.973 511.973" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m255.989 0-221.693 127.993v255.985l221.693 127.994 221.688-127.994v-255.985zm176.683 136.651-176.683 101.965-176.688-101.965 176.688-102.01zm-368.376 25.977 176.693 101.969v204.074l-176.693-102.013zm206.693 306.043v-204.074l176.688-101.968v204.03z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              {% else %}
+                <div class="product-single__thumbnails-item filter-{{ media.alt | handle }}" data-slick-index="{{ forloop.index}}">
+                  <div  class="product-thumbnails__photo product-single__thumbnail--{{ section_id }}" data-thumbnail-id="{{ media.id }}" style="--my-height-var:{{ product_height }}%">
+                    {{ media | media_tag }}
+                  </div>
+                </div>
+            {% endcase %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  {% if customer_images_size > 0 %}
+    <div class="product-single__photos--buttons">
+      <button class="btn btn--primary js-images-trigger active" data-type="customer">Customer Photos</button>
+      <button class="btn btn--primary js-images-trigger" data-type="product">Product Photos</button>
+    </div>
+  {% endif %}
+</div>

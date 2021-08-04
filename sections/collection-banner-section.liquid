@@ -1,0 +1,23 @@
+<div class="collection_banner" style="background-image: url('{% if collection.image %}{{ collection.image | img_url: 'medium' }}{% endif %};')
+">
+  <div class="page-width">
+    <div class="collection_text" data-aos="fade-right" data-aos-duration="1000">
+      <h2>{{ collection.title }}</h2>
+      <p>{{ collection.description }}</p>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

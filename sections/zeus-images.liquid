@@ -1,0 +1,71 @@
+<div class="clearfix"></div>
+<div class="product-gallery mar_bot_2">
+  <div class="container">
+    <div class="mar_top_2">
+    <div class="image-full"  data-aos="fade-up" data-aos-duration="1000">
+      <img class="mobile_hide" src="{{product.metafields.img.image_1}}" >
+      <img  class="desktop_hide" src="{{product.metafields.img-mob.image_1_mob}}">
+<!--       <img class="mobile_hide" src="{{ section.settings.image-1 | img_url:'master' }}">
+      <img  class="desktop_hide" src="{{ section.settings.image-1-mob | img_url:'master' }}"> -->
+    </div>
+    </div>
+    <div class="img_row mar_top_2">
+      <div class="image_coll"  data-aos="fade-right" data-aos-duration="1000">
+<!--         <img class="mobile_hide" src="{{ section.settings.image-2 | img_url:'master' }}">
+        <img  class="desktop_hide" src="{{ section.settings.image-2-mob | img_url:'master' }}"> -->
+        <img class="mobile_hide" src="{{product.metafields.img.image_2}}" >
+        <img  class="desktop_hide" src="{{product.metafields.img-mob.image_2_mob}}">
+      </div>
+      <div class="image_coll" data-aos="fade-left" data-aos-duration="1000">
+<!--         <img class="mobile_hide" src="{{ section.settings.image-3 | img_url:'master' }}">
+        <img class="desktop_hide" src="{{ section.settings.image-3-mob | img_url:'master' }}"> -->
+         <img class="mobile_hide" src="{{product.metafields.img.image_3}}" >
+        <img  class="desktop_hide" src="{{product.metafields.img-mob.image_3_mob}}">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+{% schema %}
+  {
+    "name": "Product Gallery",
+    "settings": [
+					{
+						"type": "image_picker",
+						"id": "image-1",
+						"label": "Image First"
+					},
+					{
+						"type": "image_picker",
+						"id": "image-1-mob",
+						"label": "Image First for Mobile"
+					},
+					{
+						"type": "image_picker",
+						"id": "image-2",
+						"label": "Image Second"
+					},
+					{
+						"type": "image_picker",
+						"id": "image-2-mob",
+						"label": "Image Second for Mobile"
+					},
+					{
+						"type": "image_picker",
+						"id": "image-3",
+						"label": "Image Thired"
+					},
+					{
+						"type": "image_picker",
+						"id": "image-3-mob",
+						"label": "Image Thired for Mobile"
+					}
+				]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
