@@ -433,7 +433,7 @@ footer.site-footer .footer-row__item.footer-row__item--mobile.footer-navigation_
 	display: none;
 }
 .footer-row__item.footer-logo {
-	width: 50% !important;
+	width: 70% !important;
 }
 #shopify-section-how-it-work-product .halo-row.column-3 .halo-row__item {
 	width: 50%;
@@ -596,6 +596,10 @@ div#shopify-section-zeus-image-button div#zeus-image-button .zeus-image-button .
   }
   #cart-mobile.popup-sidebar {
       max-width: 100%;
+  }
+  .custom-banner-section .banner_content a {
+    font-size: 21px;
+    padding: 15px 20px;
   }
 }
 

@@ -194,55 +194,55 @@
                                     {{ info_store }}
                                 </div>
                             {% when 'navigation_list' %}
-                  
+
                                 <div class="footer-row__item footer-row__item--mobile footer-navigation_list" style="width: {{ block.settings.style_width }}%">
                                     {% if block.settings.title != blank %}
                                         <h5 class="footer-heading">{{ block.settings.title }}</h5>
                                     {% endif %}
                                     <ul class="footer-list mobile-menu desktop_custom block_{{ block.id }}">
-                                      
-                                    
+
+
                                         {% for link in linklists[block.settings.navigation].links %}
                                             <li {% if forloop.last %}class="last"{% endif %}>
-                                               
+
                                                 <a href="{{ link.url }}" aria-label="link">
-                                                    {% if block.settings.banner_image != blank %}    
-                                           <img src="{{block.settings.banner_image| img_url:''}}">   
-                                              {%endif %} 
+                                                    {% if block.settings.banner_image != blank %}
+                                           <img src="{{block.settings.banner_image| img_url:''}}">
+                                              {%endif %}
                                                   <span> {{ link.title | escape }}</span>
-                                                  
+
                                                 </a>
-                                          
-                                              
+
+
                                             </li>
-                                      
-                                      
+
+
                                         {% endfor %}
                                     </ul>
                                   {% if forloop.index == 1 %}
                                   <ul class="footer-list mobile-menu mobile_custom block_{{ block.id }}">
-                                      
-                                    
+
+
                                         {% for link in linklists.mobilemenu.links %}
                                             <li {% if forloop.last %}class="last"{% endif %}>
-                                               
+
                                                 <a href="{{ link.url }}" aria-label="link">
-                                                    {% if block.settings.banner_image != blank %}    
-                                           <img src="{{block.settings.banner_image| img_url:''}}">   
-                                              {%endif %} 
+                                                    {% if block.settings.banner_image != blank %}
+                                           <img src="{{block.settings.banner_image| img_url:''}}">
+                                              {%endif %}
                                                   <span> {{ link.title | escape }}</span>
-                                                  
+
                                                 </a>
-                                          
-                                              
+
+
                                             </li>
-                                      
-                                      
+
+
                                         {% endfor %}
                                     </ul>
                                   {% endif %}
                                 </div>
-                  
+
                             {% when 'newsletter' %}
                                 <div class="footer-row__item  footer-newsletter" style="width: {{ block.settings.style_width }}%">
                                     {{ newsletter }}
@@ -530,11 +530,11 @@
                         "label": "Navigation",
                         "default": "main-menu"
                     },
-{
-"type":"image_picker",
-"id":"banner_image",
-"label":"Banner Image"
-}
+                    {
+                        "type":"image_picker",
+                        "id":"banner_image",
+                        "label":"Banner Image"
+                    }
                 ]
             },
             {
