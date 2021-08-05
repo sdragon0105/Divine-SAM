@@ -73,6 +73,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   {% render 'zoorix-head' %}
+  {%- render 'css-variables' -%}
 </head>
 
 <body class="template-{{ request.page_type | handle }} {{ settings.body_layout }}">
@@ -174,11 +175,18 @@
       prevScrollpos = currentScrollPos;
     }
 
+
     $(document).ready(function(){
-  		$("li.menu-lv-1.item.dropdown.mega-menu").hover(function(){
+  		// $("li.menu-lv-1.item.dropdown.mega-menu").hover(function(){
+      //     	$('#shopify-section-header').toggleClass('bg_nav_black');
+      //   });
+
+      $("li.menu-lv-1.item").hover(function(){
           	$('#shopify-section-header').toggleClass('bg_nav_black');
         });
     });
+
+
 
     jQuery(document).ready(function(){
      $('a.mobileMenu-toggle').click(function(){

@@ -139,7 +139,7 @@ $(document).ready(function() {
   popmypet.HomeTyped.init();
   popmypet.BackgroundsPage.init();
   popmypet.ProductPage.init();
-  
+
   jQuery(".menu-lv-1.item.dropdown").click(function(){
     var $this = jQuery(this);
     $this.toggleClass( "is-open-custom");
@@ -152,9 +152,9 @@ $(document).ready(function(){
     }
   	jQuery(".header-mobile__item.text-left").click(function(){
         jQuery("div#navigation-mobile").show();
-      }); 
+      });
   	jQuery("#navigation-mobile .close_menu").click(function(){
         jQuery("div#navigation-mobile").hide();
-      }); 
+      });
 });
 

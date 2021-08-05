@@ -82,6 +82,9 @@
             {% endfor %}
         {% endif %}
 
+
+
+
         <li class="menu-lv-1 item{% if linklists[link.handle] != empty %} dropdown{% if is_megamenu %} mega-menu {{ block_style }}{% else %} no-mega-menu{% endif %}{% endif %}{% if is_megamenu %}{% if linklists[link.handle] == empty and  block_style == 'style_4'%} dropdown mega-menu {{ block_style }}{% endif %}{% endif %}">
             <p class="nav-action{%if linklists[link.handle] == empty and is_megamenu == false %} nav-action--end{% endif %}">
                 <a href="{{ link.url }}" aria-label="link">
@@ -119,8 +122,8 @@
                     {{ link.title }}
                 </div>
                 {% if section.settings.enable_megamenu and is_megamenu %}
-                    {% render 'mega-menu', 
-                        link_child: link.handle, 
+                    {% render 'mega-menu',
+                        link_child: link.handle,
                         block_style: block_style,
                         banner_image_1: banner_image_1,
                         banner_image_2: banner_image_2,
@@ -147,8 +150,8 @@
                     {{ link.title }}
                 </div>
                 {% if section.settings.enable_megamenu and is_megamenu %}
-                    {% render 'mega-menu', 
-                        link_child: link.handle, 
+                    {% render 'mega-menu',
+                        link_child: link.handle,
                         block_style: block_style,
                         title_featured_product: title_featured_product,
                         product_1: product_1,
