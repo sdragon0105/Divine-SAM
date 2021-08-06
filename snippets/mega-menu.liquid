@@ -20,7 +20,7 @@
                                             {{ link_child_item.title }}
                                         </div>
                                         <ul class="site-nav-dropdown">
-                                            {% for n in linklists[link_child_item.handle].links %}                
+                                            {% for n in linklists[link_child_item.handle].links %}
                                                 <li class="menu-lv-3">
                                                     <a href="{{ n.url }}" class="nav-action nav-action--end" aria-label="link">
                                                         <span class="text">{{ n.title }}</span>
@@ -104,7 +104,7 @@
                 {% if banner_image_1 != blank %}
                         {% assign img_url = banner_image_1 | img_url: '430x' %}
                         {% assign img_url_2 = banner_image_1 | img_url: '330x' %}
-                        <img class="dropdown-megamenu__img lazyload" 
+                        <img class="dropdown-megamenu__img lazyload"
                             data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                             data-sizes="auto" alt="" data-image>
                         {% if link_banner_image_1 %}
@@ -137,7 +137,7 @@
                                         {{ link_child_item.title }}
                                     </div>
                                     <ul class="site-nav-dropdown">
-                                        {% for n in linklists[link_child_item.handle].links %}                
+                                        {% for n in linklists[link_child_item.handle].links %}
                                             <li class="menu-lv-3">
                                                 <a href="{{ n.url }}" class="nav-action nav-action--end" aria-label="link">
                                                     <span class="text">{{ n.title }}</span>
@@ -151,11 +151,11 @@
                     {% endfor %}
                 </ul>
             </div>
-          
+
             <div class="dropdown-megamenu-right">
                 {% if banner_image_1 != blank %}
                         {% assign img_url = banner_image_1 | img_url: '330x' %}
-                        <img class="dropdown-megamenu__img lazyload" 
+                        <img class="dropdown-megamenu__img lazyload"
                             data-srcset="{{ img_url }}"
                             data-sizes="auto" alt="" data-image>
                         {% if link_banner_image_1 %}
@@ -188,7 +188,7 @@
                                         {{ link_child_item.title }}
                                     </div>
                                     <ul class="site-nav-dropdown">
-                                        {% for n in linklists[link_child_item.handle].links %}                
+                                        {% for n in linklists[link_child_item.handle].links %}
                                             <li class="menu-lv-3">
                                                 <a href="{{ n.url }}" class="nav-action nav-action--end" aria-label="link">
                                                     <span class="text">{{ n.title }}</span>
@@ -205,7 +205,7 @@
             <div class="dropdown-megamenu-right">
                 {% if banner_image_1 != blank %}
                         {% assign img_url = banner_image_1 | img_url: '330x' %}
-                        <img class="dropdown-megamenu__img lazyload" 
+                        <img class="dropdown-megamenu__img lazyload"
                             data-srcset="{{ img_url }}"
                             data-sizes="auto" alt="" data-image>
                         {% if link_banner_image_1 %}
@@ -225,16 +225,16 @@
               <div class="mega_menu_column-5">
                 <ul class="dropdown-megamenu__img--column column-5">
                     <li>
-                    
+
                         <div class="image--hover mega_banner">
                             <div class="image-container">
                                 {% if banner_image_1 != blank %}
                                     {% assign img_url = banner_image_1 | img_url: '480x' %}
                                     {% assign img_url_2 = banner_image_1 | img_url: '330x' %}
-                                    <img class="dropdown-megamenu__img lazyload" 
+                                    <img class="dropdown-megamenu__img lazyload"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
-                              		<img class="dropdown-megamenu__img lazyload second" 
+                              		<img class="dropdown-megamenu__img lazyload second"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
                                     {% if link_banner_image_1 %}
@@ -246,14 +246,14 @@
                                 {% endif %}
                             </div>
                         </div>
-                      
+
                           {% if title_banner_image_1 != blank %}
                             {% if link_banner_image_1 %}
-                      
+
                                 <a href="{{ link_banner_image_1 }}" aria-label="link" class="megamenu__title">
                                   <h4 class="title_n">{{ title_banner_image_1 }}</h4>
                                   <h6 class="des_n">Portable, light weight</h6>
-<!--                                   <p class="small_n">Projector</p> -->
+                                  <p class="small_n">Projector</p>
                       			</a>
                             {% else %}
                                 <h3 class="megamenu__title ert">{{ title_banner_image_1 }}</h3>
@@ -261,17 +261,17 @@
                         {% endif %}
                     </li>
                     <li>
-                       
+
                         <div class="image--hover mega_banner">
                             <div class="image-container">
                                 {% if banner_image_2 != blank %}
                                     {% assign img_url = banner_image_2 | img_url: '480x' %}
                                     {% assign img_url_2 = banner_image_2 | img_url: '330x' %}
-                                    <img class="dropdown-megamenu__img lazyload" 
+                                    <img class="dropdown-megamenu__img lazyload"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
-                              
-                                    <img class="dropdown-megamenu__img lazyload second" 
+
+                                    <img class="dropdown-megamenu__img lazyload second"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
                                     {% if link_banner_image_2 %}
@@ -283,13 +283,13 @@
                                 {% endif %}
                             </div>
                         </div>
-                      
+
                        {% if title_banner_image_2 != blank %}
                             {% if link_banner_image_2 %}
                                 <a href="{{ link_banner_image_2 }}" aria-label="link" class="megamenu__title">
                                   <h4 class="title_n">{{ title_banner_image_2 }}</h4>
                                   <h6 class="des_n">4K, 3D capable</h6>
-<!--                                   <p class="small_n">Projector</p> -->
+                                  <p class="small_n">Projector</p>
                       			</a>
                             {% else %}
                                 <h3 class="megamenu__title">{{ title_banner_image_2 }}</h3>
@@ -297,16 +297,16 @@
                         {% endif %}
                     </li>
                     <li>
-                       
+
                         <div class="image--hover mega_banner">
                             <div class="image-container">
                                 {% if banner_image_3 != blank %}
                                     {% assign img_url = banner_image_3 | img_url: '480x' %}
                                     {% assign img_url_2 = banner_image_3 | img_url: '330x' %}
-                                    <img class="dropdown-megamenu__img lazyload" 
+                                    <img class="dropdown-megamenu__img lazyload"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
-                                    <img class="dropdown-megamenu__img lazyload second" 
+                                    <img class="dropdown-megamenu__img lazyload second"
                                               data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                               data-sizes="auto" alt="" data-image>
                                     {% if link_banner_image_3 %}
@@ -318,13 +318,13 @@
                                 {% endif %}
                             </div>
                         </div>
-                      
+
                        {% if title_banner_image_3 != blank %}
                             {% if link_banner_image_3 %}
                                 <a href="{{ link_banner_image_3 }}" aria-label="link" class="megamenu__title">
                                    <h4 class="title_n">{{ title_banner_image_3 }}</h4>
                       			   <h6 class="des_n">Touch, sound</h6>
-<!--                                    <p class="small_n">Digiframe</p> -->
+                                   <p class="small_n">Digiframe</p>
                       			</a>
                             {% else %}
                                 <h3 class="megamenu__title">{{ title_banner_image_3 }}</h3>
@@ -348,24 +348,24 @@
                                 {% if banner_image_4 != blank %}
                                     {% assign img_url = banner_image_4 | img_url: '480x' %}
                                     {% assign img_url_2 = banner_image_4 | img_url: '330x' %}
-                                    <img class="dropdown-megamenu__img lazyload" 
+                                    <img class="dropdown-megamenu__img lazyload"
                                         data-srcset="{{ img_url_2 }} 180w, {{ img_url }} 1025w"
                                         data-sizes="auto" alt="" data-image>
                                     {% if link_banner_image_4 %}
                                         <a href="{{ link_banner_image_4 }}" aria-label="link"></a>
                                     {% endif %}
-                               
+
                                 {% endif %}
                             </div>
                         </div>
                     </li>
-                    
+
                 </ul>
                 <div class="mega_menu_btn_n">
-                 {% if  section.settings.btn1 != blank %}  
+                 {% if  section.settings.btn1 != blank %}
                       <a class="menu_btn_n menu_l" href="{{section.settings.url1}}">{{section.settings.btn1}}</a>
                   {% endif %}
-                 {% if  section.settings.btn2 != blank %}  
+                 {% if  section.settings.btn2 != blank %}
                       <a class="menu_btn_n menu_r" href="{{section.settings.url2}}">{{section.settings.btn2}}</a>
                   {% endif %}
                 </div>
