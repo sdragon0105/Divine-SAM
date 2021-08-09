@@ -142,7 +142,7 @@ $(document).ready(function() {
 
   jQuery(".menu-lv-1.item.dropdown").click(function(){
     var $this = jQuery(this);
-    $this.toggleClass( "is-open-custom");
+     $this.toggleClass( "is-open-custom");
   });
 });
 

@@ -119,7 +119,7 @@
             <div class="dropdown-menu-mobile text-left">
                 <div class="nav-title-mobile text-center">
                     <span class="icon-dropdown">&#10094;</span>
-                    {{ link.title }}
+                    {{ link.title | capitalize  }}
                 </div>
                 {% if section.settings.enable_megamenu and is_megamenu %}
                     {% render 'mega-menu',
@@ -147,7 +147,7 @@
             <div class="dropdown-menu-mobile text-left">
                 <div class="nav-title-mobile text-center">
                     <span class="icon-dropdown">&#10094;</span>
-                    {{ link.title }}
+                    {{ link.title | capitalize }}
                 </div>
                 {% if section.settings.enable_megamenu and is_megamenu %}
                     {% render 'mega-menu',

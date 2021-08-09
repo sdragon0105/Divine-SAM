@@ -1533,7 +1533,7 @@ div#shopify-section-header header .header-middle__item.header-middle__item--acco
   	top: 50px !important;
   }
   body div#navigation-mobile li:nth-child(4){
-  	display: block !important;
+  	/* display: block !important; */
   }
   div#navigation-mobile li:nth-child(4){
   	border-bottom: unset !important;

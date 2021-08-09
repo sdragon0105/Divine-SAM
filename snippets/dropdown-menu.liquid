@@ -14,7 +14,7 @@
                         {{ link_child_item.title }}
                     </div>
                     <ul class="site-nav-dropdown">
-                        {% for n in linklists[link_child_item.handle].links %}                
+                        {% for n in linklists[link_child_item.handle].links %}
                             <li class="menu-lv-3">
                                 <a href="{{ n.url }}" class="nav-action nav-action--end" aria-label="link">
                                     <span class="text">{{ n.title }}</span>

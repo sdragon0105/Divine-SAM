@@ -144,10 +144,10 @@ div#shopify-section-collection-table td img {
     font-size: 21px;
     line-height: 25px;
 }
-div#navigation-mobile li:nth-child(4),
+/* div#navigation-mobile li:nth-child(4),
   div#navigation-mobile li:nth-child(5) {
     display: none !important;
-}
+} */
 
 /*  ul.site-nav-mobile.siteNavMobCustomContent li:last-child {
     background-image: url(https://cdn.shopify.com/s/files/1/0556/6529/5509/files/imgpsh_fullsize_anim_365efb6c-d9da-423d-beee-c0c8d3ffcba8.png?v=1619459954);

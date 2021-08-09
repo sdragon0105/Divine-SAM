@@ -22,3 +22,69 @@ div#shopify-section-collection-banner-section .page-width {
     padding: 0 45px!important;
 }
 }
+
+/*
+    SonyVaio 2021/8/6
+*/
+@media screen and (max-width: 768px) {
+    #navigation-mobile .popup-sidebar__wrapper {
+        height: 540px !important;
+    }
+    .popup-sidebar__wrapper {
+        background: #21201B;
+    }
+    ul#site-nav li.menu-lv-1.item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    li.menu-lv-1.item.dropdown.mega-menu.style_4 {
+        padding-top: 0 !important;
+    }
+    body .site-nav-mobile .dropdown .nav-action a::after {
+        right: 10px;
+    }
+    /* #site-nav.site-nav-mobile {
+        max-width: 80%;
+        margin: auto;
+    } */
+    .site-nav-mobile .menu-lv-1 > .nav-action, .site-nav-mobile .menu-lv-2 > .nav-action, .site-nav-mobile .menu-lv-3 > .nav-action {
+        font-family: "Nexa";
+        border-bottom: 1px solid #707070 !important;
+    }
+    .site-nav-mobile .nav-title-mobile {
+        text-transform: none !important;
+    }
+    .menu-lv-1.item.dropdown.mega-menu.style_4.is-open.is-open-custom {
+        padding: 0 !important;
+    }
+    .menu-lv-1.item.dropdown.mega-menu.style_4.is-open {
+        padding: 0 !important;
+    }
+    .mega_menu_btn_n {
+        padding: 15px 0 !important;
+    }
+    .title_n {
+        font-size: 21px !important;
+    }
+    .des_n {
+        font-size: 16px !important;
+    }
+    .small_n {
+        font-size: 15px;
+    }
+    .site-nav-mobile .nav-title-mobile {
+        padding: 20px 35px 10px 35px !important;
+    }
+    .dropdown-menu-mobile .nav-title-mobile.text-center::after {
+        top: 20px !important;
+        right: 40px;
+    }
+    .site-nav-mobile .menu-lv-1, .site-nav-mobile .menu-lv-2, .site-nav-mobile .menu-lv-3 {
+        transition: all  .15 linear .5s ;
+        /* -webkit-transition: all .25s linear, .15s linear .1s;
+        transition: all .25s linear, .15s linear .1s; */
+    }
+    .site-nav-mobile .nav-title-mobile {
+        font-size: 23px;
+    }
+}
